@@ -440,34 +440,6 @@
           navbar.classList.remove("nav-scrolled", "fixed-top");
         }
       });
-     </script>   
-       document.addEventListener('DOMContentLoaded', function() {
-           // Inisialisasi Intersection Observer
-           const observer = new IntersectionObserver((entries) => {
-               entries.forEach(entry => {
-                   if (entry.isIntersecting) {
-                       entry.target.classList.add('visible');
-                   } else {
-                       // Tambahkan kondisi untuk bagian Home
-                       if (entry.target.id === 'home') {
-                           entry.target.classList.remove('visible');
-                       }
-                   }
-               });
-           }, {
-               threshold: 0.1  // Kapan observer akan men-trigger
-           });
-         
-           // Pilih semua elemen yang akan dianimasikan
-           const fadeInElements = document.querySelectorAll('.fade-in');
-           const slideInElements = document.querySelectorAll('.slide-in');
-         
-           // Observe setiap elemen
-           fadeInElements.forEach(el => observer.observe(el));
-           slideInElements.forEach(el => observer.observe(el));
-         });
-         
-         
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </body>
