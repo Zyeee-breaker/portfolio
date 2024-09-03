@@ -534,6 +534,29 @@ footer{
 	}
 	/*project*/
 	/* Container Styling */
+	#project {
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.title-project {
+  margin-bottom: 2rem;
+}
+
+.title-project h1 {
+  font-size: 2.5rem;
+}
+
+.project-field {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+.project-field img {
+  max-width: 100%;
+  height: auto;
+}
+
 .title-project {
     display: flex;
     flex-direction: column;
@@ -604,7 +627,27 @@ footer{
 
 	
 /*skills&tools*/
-/* Skills Section Styling */
+/* Skills section styling */
+#skills {
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.title-skills h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.gambar-skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.main-card img {
+  max-width: 100%;
+  height: auto;
+}
 #skills {
     padding: 3rem 1rem;
     background-color: #f9f9f9; /* Light background */
