@@ -1,28 +1,298 @@
-*{
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-/* Main Color */
-:root {
-  --lightpurple: #C5BDFF;
-  --poppins: 'Poppins', sans-serif;
-  --black: #000000;
-  --abril: 'Abril Fatface', cursive;
-  --lato:  'Lato', sans-serif;
-  --purple: #9485FF;
-  --darkgray: #6E6C78;
-  --white: #FFFFFF;
-  --lightgray: #898796;
+
+/* General body styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
 }
-::selection {
-  color: var(--lightpurple);
-  background: CornflowerBlue;
-  background-color: var(--black);
+
+/* Navbar styling */
+.navbar {
+  padding: 0.5rem 1rem;
 }
-.nav-scrolled {
-  background: white !important;
+
+.navbar-item {
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
 }
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+.nav-link {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.btn {
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+}
+
+/* Jumbotron styling */
+.jumbotron {
+  background: url('img/your-image.jpg') no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 5rem 0;
+}
+
+.jumbotron .text {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.jumbotron h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.jumbotron h2 {
+  font-size: 2rem;
+}
+
+.sosial-media a {
+  color: white;
+  margin: 0 0.5rem;
+}
+
+/* About section styling */
+#about {
+  padding: 5rem 0;
+}
+
+.text-about {
+  text-align: center;
+}
+
+.text-about h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.text-about p {
+  font-size: 1.1rem;
+}
+
+.about-img img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Project section styling */
+#project {
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.title-project {
+  margin-bottom: 2rem;
+}
+
+.title-project h1 {
+  font-size: 2.5rem;
+}
+
+.project-field {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+.project-field img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Skills section styling */
+#skills {
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.title-skills h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.gambar-skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.main-card img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Promise section styling */
+#promise {
+  padding: 5rem 0;
+}
+
+.promise-title h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  font-size: 1.5rem;
+}
+
+.card-text {
+  font-size: 1rem;
+}
+
+/* Testimonial section styling */
+#testimonial {
+  padding: 5rem 0;
+}
+
+.row-testi {
+  text-align: center;
+}
+
+.img-testi img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Contact section styling */
+#contact {
+  padding: 5rem 0;
+}
+
+.contact-title h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.img-contact img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Footer styling */
+footer {
+  background-color: #f8f9fa;
+  padding: 1rem 0;
+}
+
+.footer a {
+  color: #343a40;
+}
+
+/* Responsive design */
+@media (max-width: 992px) {
+  .navbar-item {
+    font-size: 1.2rem;
+  }
+
+  .jumbotron h1 {
+    font-size: 2.5rem;
+  }
+
+  .jumbotron h2 {
+    font-size: 1.5rem;
+  }
+
+  .title-project h1 {
+    font-size: 2rem;
+  }
+
+  .text-about h1 {
+    font-size: 2rem;
+  }
+
+  .project-field {
+    font-size: 1rem;
+  }
+
+  .title-skills h1 {
+    font-size: 2rem;
+  }
+
+  .promise-title h1 {
+    font-size: 2rem;
+  }
+
+  .card-title {
+    font-size: 1.2rem;
+  }
+
+  .card-text {
+    font-size: 0.9rem;
+  }
+
+  .contact-title h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-item {
+    font-size: 1rem;
+  }
+
+  .jumbotron h1 {
+    font-size: 2rem;
+  }
+
+  .jumbotron h2 {
+    font-size: 1.2rem;
+  }
+
+  .title-project h1 {
+    font-size: 1.5rem;
+  }
+
+  .text-about h1 {
+    font-size: 1.5rem;
+  }
+
+  .project-field {
+    font-size: 0.9rem;
+  }
+
+  .title-skills h1 {
+    font-size: 1.5rem;
+  }
+
+  .promise-title h1 {
+    font-size: 1.5rem;
+  }
+
+  .card-title {
+    font-size: 1rem;
+  }
+
+  .card-text {
+    font-size: 0.8rem;
+  }
+
+  .contact-title h1 {
+    font-size: 1.5rem;
+  }
+}
+
 /*Navbar*/
 .navbar{
 	font-family: var(--poppins);
