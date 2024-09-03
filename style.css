@@ -279,64 +279,48 @@
   color: var(--purple); /* Warna span di dalam h1 */
 }
 
+/* Skills section styling */
+#skills {
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.title-skills h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
 .gambar-skills {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 1rem; /* Jarak antar kolom */
+  justify-content: center;
+  gap: 1rem; /* Jarak antar gambar */
 }
 
 .main-card {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  border-radius: 0.5rem;
-  background: var(--white); /* Background card */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan card */
-  transition: transform 0.3s ease-in-out; /* Transisi untuk efek hover */
-  padding: 1rem; /* Padding di dalam card */
+  flex: 1 1 200px; /* Gambar bisa menyusut jika diperlukan */
+  max-width: 250px; /* Atur ukuran maksimum gambar */
+  margin: 0.5rem;
 }
 
 .main-card img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
-  display: block;
+  border-radius: 10px; /* Optional: border-radius untuk sudut melengkung */
 }
 
-.gambar-skills .col-lg-3,
-.gambar-skills .col-md-6 {
-  padding: 0; /* Menghapus padding bawaan kolom */
-}
-
-.gambar-skills .col-lg-3 {
-  flex: 1 1 calc(25% - 1rem); /* Mengatur lebar kolom dengan jarak untuk perangkat besar */
-}
-
-.gambar-skills .col-md-6 {
-  flex: 1 1 calc(50% - 1rem); /* Mengatur lebar kolom dengan jarak pada ukuran menengah */
-}
-
-.gambar-skills .col-12 {
-  flex: 1 1 100%; /* Mengatur lebar kolom penuh untuk perangkat kecil */
-}
-
-.main-card:hover {
-  transform: scale(1.05); /* Efek membesar saat hover */
-}
-
-/* Responsif */
-@media (max-width: 767px) {
+/* Responsive adjustments */
+@media (min-width: 992px) {
   .title-skills h1 {
-    font-size: 1.5rem; /* Ukuran font h1 untuk perangkat kecil */
+    font-size: 2rem;
   }
 
   .gambar-skills {
-    gap: 0.5rem; /* Jarak antar kolom pada perangkat kecil */
+    gap: 2rem; /* Jarak antar gambar pada layar lebar */
   }
 
   .main-card {
-    padding: 0.5rem; /* Padding di dalam card untuk perangkat kecil */
+    max-width: 200px; /* Ukuran maksimum gambar di layar lebar */
   }
 }
 
