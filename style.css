@@ -241,70 +241,53 @@
 
 
 /*skills&toools*/
-#skills{
-	padding: 4rem 0;
-}
-.title-skills h1{
-	font-family: var(--abril);
-	font-size: 50px;
-	padding-bottom: 4rem;
-}
-.title-skills h1:after{
-	content: '';
-	display: block;
-	border-bottom: 7px solid var(--purple);
-	width: 8%;
-	padding-bottom: 9px;
-	margin-bottom: -9px;
-}
-.title-skills span{
-	color: var(--purple);
-}
-#skills .container-fluid .gambar-skills .col-lg-3{
-	padding-bottom: 3.5rem;
-}
-#skills .container-fluid .gambar-skills .col-lg-3 img:hover{
-	filter: invert(15%);
-}
-/* Container untuk gambar dengan rasio 1:1 */
-.img-skills .main-card {
-  position: relative;
-  width: 100%;
-  padding-top: 100%; /* Membuat kontainer dengan rasio 1:1 */
-  overflow: hidden; /* Menghindari gambar keluar dari kontainer */
-  border-radius: 8px; /* Menambahkan sudut membulat jika diperlukan */
-  transition: transform 0.5s ease, box-shadow 0.5s ease; /* Transisi untuk efek hover */
+/* Bagian Keterampilan */
+#skills {
+  padding: 4rem 0;
+  background-color: #f4f4f4; /* Warna latar belakang yang lembut */
 }
 
-.img-skills .main-card img {
+.title-skills {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.title-skills h1 {
+  font-size: 2.5rem;
+  color: var(--black);
+}
+
+.title-skills h1 span {
+  color: var(--purple); /* Menggunakan variabel warna */
+}
+
+.row.gambar-skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.main-card {
+  position: relative;
+  width: 100%;
+  padding-top: 100%; /* Membuat rasio 1:1 */
+  overflow: hidden;
+  border-radius: 8px; /* Menambahkan sudut membulat pada gambar */
+}
+
+.main-card img {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Menjaga gambar tetap proporsional */
-  transition: transform 0.5s ease; /* Transisi untuk efek hover */
+  object-fit: cover; /* Menjaga gambar proporsional dan tidak terdistorsi */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transisi untuk efek hover */
 }
 
-/* Efek hover untuk gambar */
-.img-skills .main-card:hover {
-  transform: scale(1.05); /* Membesar kontainer saat hover */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan saat hover */
-}
-
-.img-skills .main-card img:hover {
+.main-card img:hover {
   transform: scale(1.1); /* Membesar gambar saat hover */
-}
-
-/* Styling tambahan jika perlu */
-.title-skills h1 {
-  text-align: center;
-  margin-bottom: 2rem;
-  font-size: 2rem;
-}
-
-.title-skills span {
-  color: var(--purple); /* Menggunakan variabel warna jika diperlukan */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan saat hover */
 }
 
 /*Promise*/
