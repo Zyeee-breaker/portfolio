@@ -681,8 +681,8 @@ footer{
 }
 
 .main-card img {
-    width: 100%;
-    height: auto;
+    width: 50%;
+    height: 50%;
     transition: transform 0.3s ease; /* Smooth zoom effect */
 }
 
