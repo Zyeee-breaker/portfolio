@@ -220,7 +220,7 @@
 }
 
 .project-field img {
-  max-width: 50vw; /* Mengatur lebar gambar maksimum menjadi 50% dari lebar viewport */
+  max-width: 20vw; /* Mengatur lebar gambar maksimum menjadi 50% dari lebar viewport */
   height: auto;
   border-radius: 10px; /* Optional: border-radius untuk sudut melengkung */
 }
