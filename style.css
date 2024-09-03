@@ -199,6 +199,7 @@
 
 
 /* Styling untuk section project */
+/* Styling untuk section project */
 #project {
   padding: 5rem 0;
   text-align: center;
@@ -220,7 +221,7 @@
 }
 
 .project-field img {
-  max-width: 20vw; /* Mengatur lebar gambar maksimum menjadi 50% dari lebar viewport */
+  max-width: 50vw; /* Mengatur lebar gambar maksimum menjadi 50% dari lebar viewport */
   height: auto;
   border-radius: 10px; /* Optional: border-radius untuk sudut melengkung */
 }
@@ -253,6 +254,7 @@
     max-width: 30vw; /* Lebar maksimum gambar pada laptop menjadi 30% dari lebar viewport */
   }
 }
+
 
 
 /* Styling untuk section skills */
