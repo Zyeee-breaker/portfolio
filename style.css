@@ -261,32 +261,14 @@
 
 /*skills&toools*/
 /* Section Skills */
-#skills {
-  padding: 4rem 1.5rem; /* Jarak atas dan bawah section, padding samping lebih kecil untuk perangkat mobile */
-}
-
-.title-skills {
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-.title-skills h1 {
-  font-size: 2rem; /* Ukuran font h1 default untuk semua perangkat */
-  font-weight: 700;
-}
-
-.title-skills h1 span {
-  color: var(--purple); /* Warna span di dalam h1 */
-}
-
-/* Skills section styling */
+/* Styling untuk section skills */
 #skills {
   padding: 5rem 0;
   text-align: center;
 }
 
 .title-skills h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-bottom: 2rem;
 }
 
@@ -299,30 +281,45 @@
 
 .main-card {
   flex: 1 1 200px; /* Gambar bisa menyusut jika diperlukan */
-  max-width: 250px; /* Atur ukuran maksimum gambar */
+  max-width: 150px; /* Ukuran maksimum gambar */
   margin: 0.5rem;
+  display: flex;
+  justify-content: center;
 }
 
 .main-card img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
   border-radius: 10px; /* Optional: border-radius untuk sudut melengkung */
 }
 
 /* Responsive adjustments */
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .title-skills h1 {
-    font-size: 2rem;
-  }
-
-  .gambar-skills {
-    gap: 2rem; /* Jarak antar gambar pada layar lebar */
+    font-size: 2.5rem;
   }
 
   .main-card {
-    max-width: 200px; /* Ukuran maksimum gambar di layar lebar */
+    max-width: 200px; /* Ukuran maksimum gambar di tablet */
   }
 }
+
+@media (min-width: 992px) {
+  .title-skills h1 {
+    font-size: 3rem;
+  }
+
+  .main-card {
+    max-width: 250px; /* Ukuran maksimum gambar di laptop */
+  }
+}
+
+/* Untuk gambar fluid lainnya */
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
 
 /*Promise*/
 #promise{
