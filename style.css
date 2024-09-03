@@ -241,10 +241,9 @@
 
 
 /*skills&toools*/
-/* Bagian Keterampilan */
-\/* Section Skills */
+/* Section Skills */
 #skills {
-  padding: 4rem 0; /* Jarak atas dan bawah section */
+  padding: 4rem 1.5rem; /* Jarak atas dan bawah section, padding samping lebih kecil untuk perangkat mobile */
 }
 
 .title-skills {
@@ -253,7 +252,7 @@
 }
 
 .title-skills h1 {
-  font-size: 2.5rem; /* Ukuran font untuk h1 */
+  font-size: 2rem; /* Ukuran font h1 default untuk semua perangkat */
   font-weight: 700;
 }
 
@@ -265,7 +264,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 1.5rem; /* Jarak antar kolom */
+  gap: 1rem; /* Jarak antar kolom */
 }
 
 .main-card {
@@ -277,6 +276,7 @@
   background: var(--white); /* Background card */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan card */
   transition: transform 0.3s ease-in-out; /* Transisi untuk efek hover */
+  padding: 1rem; /* Padding di dalam card */
 }
 
 .main-card img {
@@ -291,11 +291,15 @@
 }
 
 .gambar-skills .col-lg-3 {
-  flex: 1 1 calc(25% - 1.5rem); /* Mengatur lebar kolom dengan jarak */
+  flex: 1 1 calc(25% - 1rem); /* Mengatur lebar kolom dengan jarak untuk perangkat besar */
 }
 
 .gambar-skills .col-md-6 {
-  flex: 1 1 calc(50% - 1.5rem); /* Mengatur lebar kolom dengan jarak pada ukuran menengah */
+  flex: 1 1 calc(50% - 1rem); /* Mengatur lebar kolom dengan jarak pada ukuran menengah */
+}
+
+.gambar-skills .col-12 {
+  flex: 1 1 100%; /* Mengatur lebar kolom penuh untuk perangkat kecil */
 }
 
 .main-card:hover {
@@ -305,15 +309,17 @@
 /* Responsif */
 @media (max-width: 767px) {
   .title-skills h1 {
-    font-size: 2rem; /* Ukuran font h1 untuk perangkat kecil */
+    font-size: 1.5rem; /* Ukuran font h1 untuk perangkat kecil */
   }
 
-  .gambar-skills .col-lg-3,
-  .gambar-skills .col-md-6 {
-    flex: 1 1 calc(50% - 1.5rem); /* Mengatur lebar kolom pada perangkat kecil */
+  .gambar-skills {
+    gap: 0.5rem; /* Jarak antar kolom pada perangkat kecil */
+  }
+
+  .main-card {
+    padding: 0.5rem; /* Padding di dalam card untuk perangkat kecil */
   }
 }
-
 
 /*Promise*/
 #promise{
