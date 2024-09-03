@@ -267,7 +267,7 @@
 	filter: invert(15%);
 }
 /* Container untuk gambar dengan rasio 1:1 */
-.gambar-skills .main-card {
+.img-skills .main-card {
   position: relative;
   width: 100%;
   padding-top: 100%; /* Membuat kontainer dengan rasio 1:1 */
@@ -276,7 +276,7 @@
   transition: transform 0.5s ease, box-shadow 0.5s ease; /* Transisi untuk efek hover */
 }
 
-.gambar-skills .main-card img {
+.img-skills .main-card img {
   position: absolute;
   top: 0;
   left: 0;
@@ -287,12 +287,12 @@
 }
 
 /* Efek hover untuk gambar */
-.gambar-skills .main-card:hover {
+.img-skills .main-card:hover {
   transform: scale(1.05); /* Membesar kontainer saat hover */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan saat hover */
 }
 
-.gambar-skills .main-card img:hover {
+.img-skills .main-card img:hover {
   transform: scale(1.1); /* Membesar gambar saat hover */
 }
 
