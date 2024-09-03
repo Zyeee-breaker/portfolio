@@ -197,7 +197,7 @@
 }
 
 
-/*project*/
+
 /* Styling untuk section project */
 #project {
   padding: 5rem 0;
@@ -220,7 +220,7 @@
 }
 
 .project-field img {
-  max-width: 80%; /* Mengatur lebar maksimum gambar */
+  max-width: 50vw; /* Mengatur lebar gambar maksimum menjadi 50% dari lebar viewport */
   height: auto;
   border-radius: 10px; /* Optional: border-radius untuk sudut melengkung */
 }
@@ -236,7 +236,7 @@
   }
 
   .project-field img {
-    max-width: 70%; /* Lebar maksimum gambar pada tablet */
+    max-width: 40vw; /* Lebar maksimum gambar pada tablet menjadi 40% dari lebar viewport */
   }
 }
 
@@ -250,9 +250,10 @@
   }
 
   .project-field img {
-    max-width: 60%; /* Lebar maksimum gambar pada laptop */
+    max-width: 30vw; /* Lebar maksimum gambar pada laptop menjadi 30% dari lebar viewport */
   }
 }
+
 
 /* Styling untuk section skills */
 #skills {
