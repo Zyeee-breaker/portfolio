@@ -200,22 +200,45 @@
 	top: 45%;
 	right: 5%;
 }
-.title-project h1{
-	font-family: var(--abril);
-	font-size: 50px;
-	padding-bottom: 3rem;
+/* Container untuk gambar dengan rasio 16:9 */
+.title-project img {
+  display: block; /* Menghilangkan jarak di bawah gambar */
+  width: 100%;
+  height: auto;
+  max-height: 100%; /* Mengatur tinggi maksimum gambar */
+  aspect-ratio: 16 / 9; /* Menjaga rasio 16:9 */
+  object-fit: cover; /* Menjaga gambar tetap proporsional */
+  transition: transform 0.5s ease, box-shadow 0.5s ease; /* Transisi untuk efek hover */
+  border-radius: 8px; /* Opsional: menambahkan sudut membulat */
 }
-.title-project h1:after{
-	content: '';
-	display: block;
-	border-bottom: 7px solid var(--purple);
-	width: 10%;
-	padding-bottom: 9px;
-	margin-bottom: -9px;
+
+/* Efek hover untuk gambar */
+.title-project img:hover {
+  transform: scale(1.05); /* Membesar gambar saat hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Menambahkan bayangan saat hover */
 }
-.title-project span{
-	color: var(--purple);
+
+/* Styling untuk judul dan teks proyek */
+.title-project {
+  text-align: center; /* Mengatur teks di tengah */
+  margin-bottom: 2rem;
 }
+
+.title-project h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.title-project h1 span {
+  color: var(--purple); /* Menggunakan variabel warna */
+}
+
+.title-project p {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+  font-weight: 500;
+}
+
 
 /*skills&toools*/
 #skills{
@@ -243,6 +266,47 @@
 #skills .container-fluid .gambar-skills .col-lg-3 img:hover{
 	filter: invert(15%);
 }
+/* Container untuk gambar dengan rasio 1:1 */
+.gambar-skills .main-card {
+  position: relative;
+  width: 100%;
+  padding-top: 100%; /* Membuat kontainer dengan rasio 1:1 */
+  overflow: hidden; /* Menghindari gambar keluar dari kontainer */
+  border-radius: 8px; /* Menambahkan sudut membulat jika diperlukan */
+  transition: transform 0.5s ease, box-shadow 0.5s ease; /* Transisi untuk efek hover */
+}
+
+.gambar-skills .main-card img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Menjaga gambar tetap proporsional */
+  transition: transform 0.5s ease; /* Transisi untuk efek hover */
+}
+
+/* Efek hover untuk gambar */
+.gambar-skills .main-card:hover {
+  transform: scale(1.05); /* Membesar kontainer saat hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan saat hover */
+}
+
+.gambar-skills .main-card img:hover {
+  transform: scale(1.1); /* Membesar gambar saat hover */
+}
+
+/* Styling tambahan jika perlu */
+.title-skills h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.title-skills span {
+  color: var(--purple); /* Menggunakan variabel warna jika diperlukan */
+}
+
 /*Promise*/
 #promise{
 	padding: 4rem 0;
