@@ -242,9 +242,9 @@
 
 /*skills&toools*/
 /* Bagian Keterampilan */
+\/* Section Skills */
 #skills {
-  padding: 4rem 0;
-  background-color: #f4f4f4; /* Warna latar belakang yang lembut */
+  padding: 4rem 0; /* Jarak atas dan bawah section */
 }
 
 .title-skills {
@@ -253,42 +253,67 @@
 }
 
 .title-skills h1 {
-  font-size: 2.5rem;
-  color: var(--black);
+  font-size: 2.5rem; /* Ukuran font untuk h1 */
+  font-weight: 700;
 }
 
 .title-skills h1 span {
-  color: var(--purple); /* Menggunakan variabel warna */
+  color: var(--purple); /* Warna span di dalam h1 */
 }
 
-.row.gambar-skills {
+.gambar-skills {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
+  gap: 1.5rem; /* Jarak antar kolom */
 }
 
 .main-card {
-  position: relative;
-  width: 100%;
-  padding-top: 100%; /* Membuat rasio 1:1 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
-  border-radius: 8px; /* Menambahkan sudut membulat pada gambar */
+  border-radius: 0.5rem;
+  background: var(--white); /* Background card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan card */
+  transition: transform 0.3s ease-in-out; /* Transisi untuk efek hover */
 }
 
 .main-card img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Menjaga gambar proporsional dan tidak terdistorsi */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transisi untuk efek hover */
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
-.main-card img:hover {
-  transform: scale(1.1); /* Membesar gambar saat hover */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan saat hover */
+.gambar-skills .col-lg-3,
+.gambar-skills .col-md-6 {
+  padding: 0; /* Menghapus padding bawaan kolom */
 }
+
+.gambar-skills .col-lg-3 {
+  flex: 1 1 calc(25% - 1.5rem); /* Mengatur lebar kolom dengan jarak */
+}
+
+.gambar-skills .col-md-6 {
+  flex: 1 1 calc(50% - 1.5rem); /* Mengatur lebar kolom dengan jarak pada ukuran menengah */
+}
+
+.main-card:hover {
+  transform: scale(1.05); /* Efek membesar saat hover */
+}
+
+/* Responsif */
+@media (max-width: 767px) {
+  .title-skills h1 {
+    font-size: 2rem; /* Ukuran font h1 untuk perangkat kecil */
+  }
+
+  .gambar-skills .col-lg-3,
+  .gambar-skills .col-md-6 {
+    flex: 1 1 calc(50% - 1.5rem); /* Mengatur lebar kolom pada perangkat kecil */
+  }
+}
+
 
 /*Promise*/
 #promise{
