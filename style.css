@@ -66,6 +66,83 @@
 	color: var(--white);
 	transition: 0.5;
 }
+/* Jumbotron */
+#home {
+  position: relative;
+  z-index: 1;
+}
+
+.jumbotron {
+  position: relative;
+  z-index: 1;
+}
+
+/* About Section */
+#about {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan */
+  padding: 4rem 1.5rem; /* Padding */
+  margin-top: 2rem; /* Jarak atas untuk efek bayangan */
+}
+
+/* Project Section */
+#project {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan */
+  padding: 4rem 1.5rem; /* Padding */
+  margin-top: 2rem; /* Jarak atas untuk efek bayangan */
+}
+
+/* Skills Section */
+#skills {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan */
+  padding: 4rem 1.5rem; /* Padding */
+  margin-top: 2rem; /* Jarak atas untuk efek bayangan */
+}
+
+.main-card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan untuk card */
+  transition: box-shadow 0.3s ease-in-out; /* Transisi bayangan saat hover */
+}
+
+.main-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Bayangan lebih besar saat hover */
+}
+
+/* Promise Section */
+#promise {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan */
+  padding: 4rem 1.5rem; /* Padding */
+  margin-top: 2rem; /* Jarak atas untuk efek bayangan */
+}
+
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan untuk card */
+  transition: box-shadow 0.3s ease-in-out; /* Transisi bayangan saat hover */
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Bayangan lebih besar saat hover */
+}
+
+/* Testimonial Section */
+#testimonial {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan */
+  padding: 4rem 1.5rem; /* Padding */
+  margin-top: 2rem; /* Jarak atas untuk efek bayangan */
+}
+
+/* Contact Section */
+#contact {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan */
+  padding: 4rem 1.5rem; /* Padding */
+  margin-top: 2rem; /* Jarak atas untuk efek bayangan */
+}
+
+/* Footer */
+footer {
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); /* Bayangan untuk footer, agar terpisah dari bagian lain */
+  padding: 1rem; /* Padding untuk footer */
+}
+
 /*jumbotron*/
 .jumbotron .text{
 	padding-bottom: 6rem;
