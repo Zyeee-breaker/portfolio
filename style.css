@@ -147,37 +147,56 @@
 	height: 50px;
 }
 /*About*/
-#about{
-	padding-bottom: 4rem;
+.jumbotron {
+  background: url('img/your-image.jpg') no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 5rem 0;
 }
-.text-about{
-	padding-top: 5rem;
+
+.jumbotron .text {
+  max-width: 800px;
+  margin: 0 auto;
 }
-.text-about h1{
-	font-family: var(--abril);
-	font-size: 50px;
-	text-align: left;
-	padding-bottom: 20px;
+
+.jumbotron h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
 }
-.text-about h1:after{
-	content: '';
-	display: block;
-	border-bottom: 7px solid var(--purple);
-	width: 20%;
-	padding-bottom: 2px;
-	margin-bottom: -9px;
+
+.jumbotron h2 {
+  font-size: 2rem;
 }
-.text-about span{
-	color: var(--purple);
+
+.sosial-media a {
+  color: white;
+  margin: 0 0.5rem;
 }
-.text-about p{
-	font-family: var(--poppins);
-	font-size: 23px;
-	text-transform: none;
+
+/* About section styling */
+#about {
+  padding: 5rem 0;
 }
-.about-img{
-	padding-top: 9rem;
+
+.text-about {
+  text-align: center;
 }
+
+.text-about h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.text-about p {
+  font-size: 1.1rem;
+}
+
+.about-img img {
+  max-width: 100%;
+  height: auto;
+}
+
+
 /*project*/
 #project{
 	padding: 5rem 0;
