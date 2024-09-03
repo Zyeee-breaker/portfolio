@@ -198,69 +198,62 @@
 
 
 /*project*/
-#project{
-	padding: 5rem 0;
-	background-image: url(img/back.png);
-	background-size: cover
-}
-#carouselExampleFade .carousel-control-prev{
-	background-color: var(--lightpurple);
-	border-radius: 50%;
-	height: 59px;
-	width: 60.5px;
-	top: 45%;
-	left: 5%;
-}
-#carouselExampleFade .carousel-control-next{
-	background-color: var(--lightpurple);
-	border-radius: 50%;
-	height: 59px;
-	width: 60.5px;
-	top: 45%;
-	right: 5%;
-}
-/* Container untuk gambar dengan rasio 16:9 */
-.title-project img {
-  display: block; /* Menghilangkan jarak di bawah gambar */
-  width: 100%;
-  height: auto;
-  max-height: 100%; /* Mengatur tinggi maksimum gambar */
-  aspect-ratio: 16 / 9; /* Menjaga rasio 16:9 */
-  object-fit: cover; /* Menjaga gambar tetap proporsional */
-  transition: transform 0.5s ease, box-shadow 0.5s ease; /* Transisi untuk efek hover */
-  border-radius: 8px; /* Opsional: menambahkan sudut membulat */
+/* Styling untuk section project */
+#project {
+  padding: 5rem 0;
+  text-align: center;
 }
 
-/* Efek hover untuk gambar */
-.title-project img:hover {
-  transform: scale(1.05); /* Membesar gambar saat hover */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Menambahkan bayangan saat hover */
-}
-
-/* Styling untuk judul dan teks proyek */
 .title-project {
-  text-align: center; /* Mengatur teks di tengah */
   margin-bottom: 2rem;
 }
 
-.title-project h1 {
-  font-size: 2.5rem;
+.project-isi {
+  font-size: 2rem;
   margin-bottom: 1rem;
 }
 
-.title-project h1 span {
-  color: var(--purple); /* Menggunakan variabel warna */
+.project-field {
+  display: block;
+  font-size: 1.5rem;
+  margin: 1rem 0;
 }
 
-.title-project p {
-  font-size: 1.2rem;
-  margin: 0.5rem 0;
-  font-weight: 500;
+.project-field img {
+  max-width: 80%; /* Mengatur lebar maksimum gambar */
+  height: auto;
+  border-radius: 10px; /* Optional: border-radius untuk sudut melengkung */
 }
 
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  .title-project .project-isi {
+    font-size: 2.5rem;
+  }
 
-/*skills&toools*/
-/* Section Skills */
+  .project-field {
+    font-size: 1.75rem;
+  }
+
+  .project-field img {
+    max-width: 70%; /* Lebar maksimum gambar pada tablet */
+  }
+}
+
+@media (min-width: 992px) {
+  .title-project .project-isi {
+    font-size: 3rem;
+  }
+
+  .project-field {
+    font-size: 2rem;
+  }
+
+  .project-field img {
+    max-width: 60%; /* Lebar maksimum gambar pada laptop */
+  }
+}
+
 /* Styling untuk section skills */
 #skills {
   padding: 5rem 0;
