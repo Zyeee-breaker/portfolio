@@ -125,48 +125,125 @@ body {
   }
 }
 
-/* Project section styling */
-#project {
-  padding: 4rem 2rem;
+.container-fluid {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
-.title-project h1 {
+/* Project Section Styling */
+#project {
+  padding: 4rem 1rem;
+  background-color: #f9f9f9;
+}
+
+/* Title Styling */
+.title-project {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.project-isi {
   font-size: 2.5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-isi span {
+  color: #007bff;
 }
 
 .project-field {
   font-size: 2rem;
-  margin: 2rem 0;
+  margin: 2rem 0 1.5rem;
+  text-align: center;
 }
 
-.web-dev-container, .prog-container {
+/* Web Dev Container */
+.web-dev-container,
+.prog-container {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
+  justify-content: center;
+  margin-bottom: 3rem;
 }
 
-.web-dev-detail, .prog-detail {
-  flex: 1;
+.web-dev-detail,
+.prog-detail {
+  flex: 1 1 45%;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.web-dev-image img, .prog-image img {
+.web-dev-image img,
+.prog-image img {
   max-width: 100%;
   border-radius: 8px;
 }
 
+.web-dev-detail ul,
+.prog-detail ul {
+  list-style-type: disc;
+  margin-left: 2rem;
+}
+
+/* Game Table Styling */
+.game-table {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
 .game-item {
+  flex: 1 1 18%;
   text-align: center;
-  margin: 1rem 0;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .game-item img {
   max-width: 100%;
   border-radius: 8px;
+  margin-bottom: 0.5rem;
 }
 
 .game-item h2 {
-  margin-top: 0.5rem;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.game-item p {
+  font-size: 0.875rem;
+  color: #666;
+}
+
+/* Animation for Scroll */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .web-dev-detail,
+  .prog-detail {
+    flex: 1 1 100%;
+  }
+
+  .game-item {
+    flex: 1 1 45%;
+  }
 }
 
 /* Skills & Tools section styling */
