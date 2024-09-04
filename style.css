@@ -177,7 +177,6 @@ body {
 
 .web-dev-detail {
   flex: 1 1 50%;
-  background: #fff;
   padding: 1.5rem;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -207,7 +206,6 @@ body {
 
 .prog-detail {
   flex: 1 1 50%;
-  background: #fff;
   padding: 1.5rem;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
