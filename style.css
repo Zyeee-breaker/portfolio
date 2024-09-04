@@ -113,6 +113,8 @@ body {
 .project-field img {
   max-width: 100%;
   height: auto;
+  padding: 20rem;
+  margin-bottom: 10rem;
 }
 
 /* Skills section styling */
