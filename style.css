@@ -341,6 +341,9 @@ body {
   border-radius: 8px;
 }
 
+.main-card img:hover {
+  transform:scale(1.1);
+}
 /* Promise section styling */
 #promise {
   padding: 4rem 2rem;
