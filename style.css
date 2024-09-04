@@ -40,17 +40,18 @@ a {
 }
 
 .navbar .navbar-nav .nav-link:hover {
-    color: #007bff;
+    color: highblue;
 }
 
 .navbar .btn {
     background-color: #007bff;
-    color: #fff;
+    color: black;
     border: none;
 }
 
 .navbar .btn:hover {
-    background-color: #0056b3;
+    background-color: black;
+    color: white;
 }
 
 /* Jumbotron */
