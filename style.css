@@ -131,7 +131,9 @@ body {
   padding: 0 1rem;
 }
 
-/* Project Section Styling */.container-fluid {
+/* Project Section Styling */
+
+.container-fluid {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1rem;
@@ -167,14 +169,14 @@ body {
 /* Web Development Container */
 .web-dev-container {
   display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
+  flex-wrap: nowrap;
+  gap: 1.5rem;
   margin-bottom: 3rem;
   align-items: center;
 }
 
 .web-dev-detail {
-  flex: 1 1 45%;
+  flex: 1 1 50%;
   background: #fff;
   padding: 1.5rem;
   border-radius: 8px;
@@ -182,7 +184,7 @@ body {
 }
 
 .web-dev-image {
-  flex: 1 1 45%;
+  flex: 1 1 50%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -190,20 +192,21 @@ body {
 
 .web-dev-image img {
   max-width: 100%;
+  height: auto; /* Maintain aspect ratio */
   border-radius: 8px;
 }
 
 /* Programming Container */
 .prog-container {
   display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
+  flex-wrap: nowrap;
+  gap: 1.5rem;
   margin-bottom: 3rem;
   align-items: center;
 }
 
 .prog-detail {
-  flex: 1 1 45%;
+  flex: 1 1 50%;
   background: #fff;
   padding: 1.5rem;
   border-radius: 8px;
@@ -211,7 +214,7 @@ body {
 }
 
 .prog-image {
-  flex: 1 1 45%;
+  flex: 1 1 50%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -219,6 +222,7 @@ body {
 
 .prog-image img {
   max-width: 100%;
+  height: auto; /* Maintain aspect ratio */
   border-radius: 8px;
 }
 
@@ -241,6 +245,7 @@ body {
 
 .game-item img {
   max-width: 100%;
+  height: auto; /* Maintain aspect ratio */
   border-radius: 8px;
   margin-bottom: 0.5rem;
 }
@@ -269,15 +274,23 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  .web-dev-container,
+  .prog-container {
+    flex-direction: column;
+  }
+
   .web-dev-detail,
   .prog-detail {
     flex: 1 1 100%;
   }
 
-  .game-item {
-    flex: 1 1 45%;
+  .web-dev-image,
+  .prog-image {
+    flex: 1 1 100%;
   }
 }
+
+/* Project Section Styling */
 
 /* Skills & Tools section styling */
 #skills {
