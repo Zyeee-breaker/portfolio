@@ -242,6 +242,66 @@ a {
   max-width: 100%;
 }
 
+/* Styling untuk section QR */
+.qr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh; /* Mengisi tinggi viewport */
+  background-color: #f8f9fa; /* Warna latar belakang */
+  padding: 20px;
+}
+
+.qr h1 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: #333;
+  font-family: 'Poppins', sans-serif; /* Menggunakan font Poppins */
+}
+
+.qr-img {
+  margin-bottom: 20px;
+}
+
+.qr-img img {
+  max-width: 150px; /* Ukuran maksimum gambar QR code */
+  height: auto;
+  transition: transform 0.3s ease-in-out; /* Transisi halus saat hover */
+}
+
+.qr-img img:hover {
+  transform: scale(1.1); /* Membesar saat hover */
+}
+
+.qr-name {
+  font-family: 'Lato', sans-serif; /* Menggunakan font Lato */
+}
+
+.qr-name p {
+  margin: 10px 0;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.qr-name a {
+  text-decoration: none;
+  color: #333;
+}
+
+.qr-name a:hover {
+  color: #007bff; /* Warna teks saat hover pada link */
+}
+
+.qr-name i {
+  color: #333;
+}
+
+.qr-name i:hover {
+  color: #007bff; /* Warna ikon saat hover */
+}
+
 /* Footer Styles */
 footer {
   background-color: #f1f1f1;
