@@ -474,6 +474,11 @@ footer {
 }
 
 /* Styling untuk section */
+.container-fluid {
+    padding: 0 15px;
+}
+
+/* Styling untuk section */
 #project {
     padding: 40px 0;
     background-color: #f8f9fa;
@@ -500,42 +505,93 @@ footer {
     margin-bottom: 20px;
 }
 
-.fluid-detail, .fluid-detai {
-    font-size: 1.2em;
-    color: #343a40;
-    margin: 20px 0;
+/* Web Development */
+.web-dev-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
 }
 
-.fluid-detail p, .fluid-detai p {
+.web-dev-detail {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.web-dev-detail p {
     margin-bottom: 10px;
 }
 
-li {
-    list-style: disc;
-    margin-left: 20px;
-    margin-bottom: 5px;
+.web-dev-image {
+    flex: 1;
+    text-align: right;
 }
 
-/* Styling gambar */
-.fluid-img, .game-item {
-    margin: 20px 0;
-    text-align: center;
-}
-
-.fluid-img img, .game-item img {
+.web-dev-image img {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
     transition: transform 0.3s;
 }
 
-.fluid-img img:hover, .game-item img:hover {
+.web-dev-image img:hover {
     transform: scale(1.05);
 }
 
-/* Styling game-item */
-.game-item {
+/* Programming */
+.prog-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     margin-bottom: 40px;
+}
+
+.prog-image {
+    flex: 1;
+    text-align: left;
+}
+
+.prog-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.prog-image img:hover {
+    transform: scale(1.05);
+}
+
+.prog-detail {
+    flex: 2;
+    margin-left: 20px;
+}
+
+/* Game Favorite */
+.game-table {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.game-item {
+    text-align: center;
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.game-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.game-item img:hover {
+    transform: scale(1.05);
 }
 
 .game-item h2 {
@@ -554,17 +610,20 @@ li {
         font-size: 1.8em;
     }
 
-    .fluid-detail, .fluid-detai {
-        font-size: 1em;
+    .web-dev-container, .prog-container {
+        flex-direction: column;
+        text-align: center;
     }
 
-    .game-item h2 {
-        font-size: 1.2em;
+    .web-dev-detail, .prog-detail {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .game-table {
+        grid-template-columns: 1fr;
     }
 }
-
-
-
 /* Styling untuk section skills */
 #skills {
   padding: 5rem 0;
