@@ -1,9 +1,10 @@
 /* Resetting default browser styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
 /* Global Styles */
 body {
   font-family: 'Poppins', sans-serif;
@@ -87,9 +88,22 @@ a {
   color: white;
   padding: 100px 0;
   text-align: center;
+  position: relative;
+}
+
+.jumbotron::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  z-index: 0;
 }
 
 .jumbotron .text {
+  position: relative;
   z-index: 1;
 }
 
@@ -252,21 +266,49 @@ a {
   height: 100vh; /* Mengisi tinggi viewport */
   background-color: #f8f9fa; /* Warna latar belakang */
   padding: 20px;
+  position: relative;
+  overflow: hidden; /* Untuk efek animasi yang halus */
+}
+
+.qr::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  z-index: -1;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0;
+}
+
+.qr:hover::before {
+  opacity: 1;
 }
 
 .qr h1 {
   margin-bottom: 20px;
-  font-size: 1.5rem;
+  font-size: 2rem; /* Memperbesar ukuran font */
   color: #333;
   font-family: 'Poppins', sans-serif; /* Menggunakan font Poppins */
+  transition: transform 0.3s ease; /* Animasi saat hover */
+}
+
+.qr h1:hover {
+  transform: scale(1.05); /* Membesar saat hover */
 }
 
 .qr-img {
   margin-bottom: 20px;
+  position: relative;
+  width: 50vw; /* Lebar gambar 50% dari lebar viewport */
+  height: auto;
+  overflow: hidden;
 }
 
 .qr-img img {
-  max-width: 150px; /* Ukuran maksimum gambar QR code */
+  width: 100%;
   height: auto;
   transition: transform 0.3s ease-in-out; /* Transisi halus saat hover */
 }
@@ -281,13 +323,19 @@ a {
 
 .qr-name p {
   margin: 10px 0;
-  font-size: 1.2rem;
+  font-size: 1.5rem; /* Memperbesar ukuran font */
   color: #555;
+  transition: color 0.3s ease; /* Transisi halus saat hover */
+}
+
+.qr-name p:hover {
+  color: #007bff; /* Warna teks saat hover */
 }
 
 .qr-name a {
   text-decoration: none;
   color: #333;
+  transition: color 0.3s ease; /* Transisi halus saat hover */
 }
 
 .qr-name a:hover {
@@ -296,6 +344,7 @@ a {
 
 .qr-name i {
   color: #333;
+  transition: color 0.3s ease; /* Transisi halus saat hover */
 }
 
 .qr-name i:hover {
@@ -316,4 +365,3 @@ footer .footer {
   display: inline-block;
   margin: 0 10px;
 }
-
