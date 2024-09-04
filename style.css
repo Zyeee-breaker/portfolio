@@ -247,6 +247,9 @@ body {
   border-radius: 8px;
   margin-bottom: 0.5rem;
 }
+.game-item img:hover {
+  trasform:scale(1.1);
+}
 
 .game-item h2 {
   font-size: 1.25rem;
