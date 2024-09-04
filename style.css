@@ -131,6 +131,12 @@ body {
   padding: 0 1rem;
 }
 
+/* Project Section Styling */.container-fluid {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
 /* Project Section Styling */
 #project {
   padding: 4rem 1rem;
@@ -158,17 +164,44 @@ body {
   text-align: center;
 }
 
-/* Web Dev Container */
-.web-dev-container,
+/* Web Development Container */
+.web-dev-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  align-items: center;
+}
+
+.web-dev-detail {
+  flex: 1 1 45%;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.web-dev-image {
+  flex: 1 1 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.web-dev-image img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+/* Programming Container */
 .prog-container {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
-  justify-content: center;
   margin-bottom: 3rem;
+  align-items: center;
 }
 
-.web-dev-detail,
 .prog-detail {
   flex: 1 1 45%;
   background: #fff;
@@ -177,16 +210,16 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.web-dev-image img,
+.prog-image {
+  flex: 1 1 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .prog-image img {
   max-width: 100%;
   border-radius: 8px;
-}
-
-.web-dev-detail ul,
-.prog-detail ul {
-  list-style-type: disc;
-  margin-left: 2rem;
 }
 
 /* Game Table Styling */
