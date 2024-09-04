@@ -258,3 +258,185 @@ nav.scrolled {
 }
 
 .gambar-skills .main
+@media (max-width: 768px) {
+    .title-skills h1 {
+        font-size: 2rem;
+    }
+
+    .row.gambar-skills {
+        gap: 0.5rem; /* Reduced gap on smaller screens */
+    }
+
+    .main-card {
+        border-radius: 10px; /* Smaller radius */
+    }
+}
+
+/*promise*/
+#promise{
+	background-image: url(img/THINGS.png);
+	background-size: cover;
+}
+.promise-title h1{
+	font-size: 65px;
+	text-align: center;
+}
+#promise .datar-promise{
+	margin: 0 4.5rem;
+}
+/*testimonial*/
+#testimonial .one{
+	padding-top: 6rem;
+	padding-left: 3rem;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;  
+}
+#testimonial .two{
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;  
+}
+.contact-title  h1{
+	font-size: 65px;
+}
+
+/* QR Section Styling */
+.qr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #f0f0f0; /* Light background for contrast */
+    padding: 2rem;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center;
+    margin: 2rem auto; /* Centered with automatic horizontal margins */
+}
+
+/* QR Image Styling */
+.qr-img img {
+    max-width: 200px; /* Limit the maximum width */
+    width: 100%; /* Responsive width */
+    height: auto;
+    border-radius: 8px; /* Rounded corners */
+    transition: transform 0.3s ease-in-out; /* Smooth zoom effect */
+}
+
+/* Hover Effect for QR Image */
+.qr-img img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* QR Name Styling */
+.qr-name p {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333; /* Dark text color */
+    margin: 1rem 0;
+}
+
+/* GitHub Icon Styling */
+.qr-name a {
+    color: #333; /* Icon color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease-in-out; /* Smooth color transition */
+}
+
+.qr-name a:hover {
+    color: #000; /* Darker color on hover */
+}
+
+.qr-name i {
+    margin-top: 0.5rem;
+}
+@media (max-width: 768px) {
+    .title-skills h1 {
+        font-size: 2rem;
+    }
+
+    .row.gambar-skills {
+        gap: 0.5rem; /* Reduced gap on smaller screens */
+    }
+
+    .main-card {
+        border-radius: 10px; /* Smaller radius */
+    }
+}
+
+/*promise*/
+#promise{
+	background-image: url(img/THINGS.png);
+	background-size: cover;
+}
+.promise-title h1{
+	font-size: 65px;
+	text-align: center;
+}
+#promise .datar-promise{
+	margin: 0 4.5rem;
+}
+/*testimonial*/
+#testimonial .one{
+	padding-top: 6rem;
+	padding-left: 3rem;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;  
+}
+#testimonial .two{
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;  
+}
+.contact-title  h1{
+	font-size: 65px;
+}
+
+/* QR Section Styling */
+.qr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #f0f0f0; /* Light background for contrast */
+    padding: 2rem;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center;
+    margin: 2rem auto; /* Centered with automatic horizontal margins */
+}
+
+/* QR Image Styling */
+.qr-img img {
+    max-width: 200px; /* Limit the maximum width */
+    width: 100%; /* Responsive width */
+    height: auto;
+    border-radius: 8px; /* Rounded corners */
+    transition: transform 0.3s ease-in-out; /* Smooth zoom effect */
+}
+
+/* Hover Effect for QR Image */
+.qr-img img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* QR Name Styling */
+.qr-name p {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333; /* Dark text color */
+    margin: 1rem 0;
+}
+
+/* GitHub Icon Styling */
+.qr-name a {
+    color: #333; /* Icon color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease-in-out; /* Smooth color transition */
+}
+
+.qr-name a:hover {
+    color: #000; /* Darker color on hover */
+}
+
+.qr-name i {
+    margin-top: 0.5rem;
+}
