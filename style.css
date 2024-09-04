@@ -260,7 +260,39 @@ body {
   font-size: 0.875rem;
   color: #666;
 }
+.game-table {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
 
+.game-item {
+  flex: 1 1 18%;
+  text-align: center;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.game-item img {
+  max-width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+/* Hover Effect */
+.game-item:hover {
+  transform: scale(1.05); /* Slightly enlarge the item */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.game-item:hover img {
+  transform: scale(1.1); /* Slightly enlarge the image */
+}
 /* Animation for Scroll */
 .fade-in {
   opacity: 0;
