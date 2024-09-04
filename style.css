@@ -1,590 +1,168 @@
-/* Reset default browser styles */
+/* Resetting default browser styles */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* General body styling */
+/* Global styles */
 body {
-  font-family: 'Poppins', sans-serif;
-  line-height: 1.6;
-}
-
-/* Navbar styling */
-.navbar {
-  padding: 0.5rem 1rem;
-}
-
-.navbar-item {
-  font-size: 1.5rem;
-  font-weight: 500;
-  text-transform: uppercase;
-}
-
-.navbar-toggler {
-  border: none;
-}
-
-.navbar-collapse {
-  justify-content: flex-end;
-}
-
-.nav-link {
-  font-size: 1rem;
-  font-weight: 500;
-}
-
-.btn {
-  font-size: 0.9rem;
-  font-weight: 600;
-  padding: 0.5rem 1rem;
-}
-
-/* Jumbotron styling */
-.jumbotron {
-  background: url('img/your-image.jpg') no-repeat center center/cover;
-  color: white;
-  text-align: center;
-  padding: 5rem 0;
-}
-
-.jumbotron .text {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.jumbotron h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-}
-
-.jumbotron h2 {
-  font-size: 2rem;
-}
-
-.sosial-media a {
-  color: white;
-  margin: 0 0.5rem;
-}
-
-/* About section styling */
-#about {
-  padding: 5rem 0;
-}
-
-.text-about {
-  text-align: center;
-}
-
-.text-about h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
-
-.text-about p {
-  font-size: 1.1rem;
-}
-
-.about-img img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* Project section styling */
-#project {
-  padding: 5rem 0;
-  text-align: center;
-}
-
-.title-project {
-  margin-bottom: 2rem;
-}
-
-.title-project h1 {
-  font-size: 2.5rem;
-}
-
-.project-field {
-  font-size: 1.2rem;
-  margin: 1rem 0;
-  padding: 20rem;
-}
-
-.project-field img {
-  max-width: 100%;
-  height: auto;
-  padding: 20rem;
-}
-
-/* Skills section styling */
-#skills {
-  padding: 5rem 0;
-  text-align: center;
-}
-
-.title-skills h1 {
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
-}
-
-.gambar-skills {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.main-card img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* Promise section styling */
-#promise {
-  padding: 5rem 0;
-}
-
-.promise-title h1 {
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
-}
-
-.card {
-  border: none;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.card-title {
-  font-size: 1.5rem;
-}
-
-.card-text {
-  font-size: 1rem;
-}
-
-/* Testimonial section styling */
-#testimonial {
-  padding: 5rem 0;
-}
-
-.row-testi {
-  text-align: center;
-}
-
-.img-testi img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* Contact section styling */
-#contact {
-  padding: 5rem 0;
-}
-
-.contact-title h1 {
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
-}
-
-.img-contact img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* Footer styling */
-footer {
-  background-color: #f8f9fa;
-  padding: 1rem 0;
-}
-
-.footer a {
-  color: #343a40;
-}
-
-/* Responsive design */
-@media (max-width: 992px) {
-  .navbar-item {
-    font-size: 1.2rem;
-  }
-
-  .jumbotron h1 {
-    font-size: 2.5rem;
-  }
-
-  .jumbotron h2 {
-    font-size: 1.5rem;
-  }
-
-  .title-project h1 {
-    font-size: 2rem;
-  }
-
-  .text-about h1 {
-    font-size: 2rem;
-  }
-
-  .project-field {
-    font-size: 1rem;
-  }
-
-  .title-skills h1 {
-    font-size: 2rem;
-  }
-
-  .promise-title h1 {
-    font-size: 2rem;
-  }
-
-  .card-title {
-    font-size: 1.2rem;
-  }
-
-  .card-text {
-    font-size: 0.9rem;
-  }
-
-  .contact-title h1 {
-    font-size: 2rem;
-  }
-}
-
-@media (max-width: 576px) {
-  .navbar-item {
-    font-size: 1rem;
-  }
-
-  .jumbotron h1 {
-    font-size: 2rem;
-  }
-
-  .jumbotron h2 {
-    font-size: 1.2rem;
-  }
-
-  .title-project h1 {
-    font-size: 1.5rem;
-  }
-
-  .text-about h1 {
-    font-size: 1.5rem;
-  }
-
-  .project-field {
-    font-size: 0.9rem;
-  }
-
-  .title-skills h1 {
-    font-size: 1.5rem;
-  }
-
-  .promise-title h1 {
-    font-size: 1.5rem;
-  }
-
-  .card-title {
-    font-size: 1rem;
-  }
-
-  .card-text {
-    font-size: 0.8rem;
-  }
-
-  .contact-title h1 {
-    font-size: 1.5rem;
-  }
-}
-
-/*Navbar*/
-.navbar{
-	font-family: var(--poppins);
-	background-color: white;
-}
-.navbar-toggler{
-	border: none !important;
-}
-.navbar-toggler:focus,
-.navbar-toggler:active,
-.navbar-toggler-icon:focus {
-    outline: none;
-    box-shadow: none;
-}
-.navbar .container-fluid .navbar-item{
-	font-size: 28.5px;
-	letter-spacing: 2px;
-	font-weight: 550;
-	color: black;
-	text-decoration: none;
-}
-.navbar .container-fluid .span{
-	color: var(--purple)
-}
-.navbar .navbar-nav .nav-item a{
-	font-weight: 400;
-	font-size: 20px;
-	text-transform: uppercase;
-	color: black;
-}
-.d-flex .btn{
-	font-size: 15px;
-	background-color: black;
-	border-radius: 50px;
-	color: var(--white);
-	text-transform: uppercase;
-	padding: 13px 19px;
-}
-.d-flex .btn:hover{
-	background-color: var(--purple);
-	color: var(--white);
-	transition: 0.5;
-}
-/*jumbotron*/
-.jumbotron .text{
-	padding-bottom: 6rem;
-}
-.jumbotron{
-	background-image: url(img/scr.png) !important;
-	background-size: cover;
-	height: 100vh;
-	margin-top: -74px;	
-	background-position: center;
-}
-.jumbotron .text h2{
-	text-transform: uppercase;
-	font-family: var(--lato);
-	font-size: 24px;
-	font-weight: 300;
-	padding-top: 9.5rem;
-}
-.jumbotron .text h1{
-	text-transform: capitalize;
-	font-family: var(--abril);
-	font-size: 75px;
-	color: black;
-	overflow: hidden;
-}
-@keyframes blink {
-  0% {
-    background-color: #ccc;
-  }
-
-  49% {
-    background-color: #ccc;
-  }
-
-  50% {
-    background-color: transparent;
-  }
-
-  99% {
-  	background-color: transparent;
-  }
-  100% {
-  	background-color: #ccc;
-  }
-}
-.jumbotron .text h1 .cursor{
-	display: inline-block;
-	background-color: #ccc;
-	margin-left: 0.1rem;
-	width: 3px;
-	animation: blink 1s infinite;
-}
-.jumbotron .text h1 .cursor .typing {
-	animation: none;
-}
-.jumbotron .text span{	
-	color: var(--purple);
-}
-
-.jumbotron .text h3{
-	text-transform: capitalize;
-	font-family: var(--poppins);
-	font-size: 24px;
-	font-weight: 400;
-	display: flex;
-	padding-bottom: 25px;
-}
-.jumbotron .text h3::after{
-	content: '';
-	display: block;
-	border-right: 7px solid var(--lightpurple);
-	width: 5px;
-}
-.jumbotron .sosial-media a{
-	text-decoration: none;
-	color: var(--lightgray);
-	padding-right: 25px;
-	width: 50px;
-	height: 50px;
-}
-/*About*/
-.jumbotron {
-  background: url('img/your-image.jpg') no-repeat center center/cover;
-  color: white;
-  text-align: center;
-  padding: 5rem 0;
-}
-
-.jumbotron .text {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.jumbotron h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-}
-
-.jumbotron h2 {
-  font-size: 2rem;
-}
-
-.sosial-media a {
-  color: white;
-  margin: 0 0.5rem;
-}
-
-/* About section styling */
-#about {
-  padding: 5rem 0;
-}
-
-.text-about {
-  text-align: center;
-}
-
-.text-about h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
-
-.text-about p {
-  font-size: 1.1rem;
-}
-
-.about-img img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* Styling untuk container-fluid */
-.container-fluid {
-    padding: 0 15px;
-}
-
-/* Styling untuk section */
-.container-fluid {
-    padding: 0 15px;
-}
-
-/* Styling untuk section */
-#project {
-    padding: 40px 0;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
     background-color: #f8f9fa;
 }
 
-.title-project {
-    text-align: center;
-    margin-bottom: 40px;
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
-.project-isi {
-    font-size: 2.5em;
+.navbar {
+    background-color: #fff;
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .navbar-item {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.navbar .navbar-toggler {
+    border: none;
+}
+
+.navbar .navbar-nav .nav-link {
+    margin-left: 1rem;
+    font-size: 1rem;
     color: #333;
-    margin-bottom: 10px;
 }
 
-.project-isi span {
+.navbar .navbar-nav .nav-link:hover {
     color: #007bff;
 }
 
-.project-field {
-    font-size: 2em;
-    color: #495057;
-    margin-bottom: 20px;
+.navbar .btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
 }
 
-/* Web Development */
-.web-dev-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 40px;
+.navbar .btn:hover {
+    background-color: #0056b3;
 }
 
-.web-dev-detail {
-    flex: 1;
-    margin-right: 20px;
-}
-
-.web-dev-detail p {
-    margin-bottom: 10px;
-}
-
-.web-dev-image {
-    flex: 1;
-    text-align: right;
-}
-
-.web-dev-image img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    transition: transform 0.3s;
-}
-
-.web-dev-image img:hover {
-    transform: scale(1.05);
-}
-
-/* Programming */
-.prog-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 40px;
-}
-
-.prog-image {
-    flex: 1;
-    text-align: left;
-}
-
-.prog-image img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    transition: transform 0.3s;
-}
-
-.prog-image img:hover {
-    transform: scale(1.05);
-}
-
-.prog-detail {
-    flex: 2;
-    margin-left: 20px;
-}
-
-/* Game Favorite */
-.game-table {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
-    margin-bottom: 40px;
-}
-
-.game-item {
+/* Jumbotron */
+.jumbotron {
+    background: url('img/jumbotron-bg.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 5rem 0;
     text-align: center;
-    background: #fff;
-    padding: 15px;
+}
+
+.jumbotron .text {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.jumbotron .display-4 {
+    font-size: 3rem;
+    font-family: 'Abril Fatface', cursive;
+}
+
+.jumbotron .h1 {
+    font-size: 4rem;
+    font-family: 'Abril Fatface', cursive;
+}
+
+.jumbotron .lead {
+    font-size: 1.5rem;
+}
+
+.sosial-media a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 2rem;
+}
+
+.sosial-media a:hover {
+    color: #007bff;
+}
+
+/* About Section */
+#about {
+    padding: 5rem 2rem;
+    background-color: #fff;
+}
+
+#about .text-about {
+    text-align: center;
+}
+
+#about h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+#about p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+#about .about-img img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Project Section */
+#project {
+    padding: 5rem 2rem;
+    background-color: #f8f9fa;
+}
+
+.title-project h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.web-dev-container, .prog-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.web-dev-detail, .prog-detail {
+    max-width: 50%;
+}
+
+.web-dev-image, .prog-image {
+    max-width: 40%;
+}
+
+.web-dev-image img, .prog-image img {
+    width: 100%;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+.game-table {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.game-item {
+    text-align: center;
+}
+
 .game-item img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
     border-radius: 8px;
     transition: transform 0.3s;
@@ -595,594 +173,25 @@ footer {
 }
 
 .game-item h2 {
-    font-size: 1.5em;
-    margin: 10px 0;
-}
-
-.game-item p {
-    color: #6c757d;
-    font-size: 1em;
-}
-
-/* Mobile responsiveness */
-@media (max-width: 768px) {
-    .project-isi, .project-field {
-        font-size: 1.8em;
-    }
-
-    .web-dev-container, .prog-container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .web-dev-detail, .prog-detail {
-        margin-right: 0;
-        margin-left: 0;
-    }
-
-    .game-table {
-        grid-template-columns: 1fr;
-    }
-}
-/* Styling untuk section skills */
-#skills {
-  padding: 5rem 0;
-  text-align: center;
-}
-
-.title-skills h1 {
-  font-size: 2rem;
-  margin-bottom: 2rem;
-}
-
-.gambar-skills {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem; /* Jarak antar gambar */
-}
-
-.main-card {
-  flex: 1 1 200px; /* Gambar bisa menyusut jika diperlukan */
-  max-width: 150px; /* Ukuran maksimum gambar */
-  margin: 0.5rem;
-  display: flex;
-  justify-content: center;
-}
-
-.main-card img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px; /* Optional: border-radius untuk sudut melengkung */
-}
-
-/* Responsive adjustments */
-@media (min-width: 768px) {
-  .title-skills h1 {
-    font-size: 2.5rem;
-  }
-
-  .main-card {
-    max-width: 200px; /* Ukuran maksimum gambar di tablet */
-  }
-}
-
-@media (min-width: 992px) {
-  .title-skills h1 {
-    font-size: 3rem;
-  }
-
-  .main-card {
-    max-width: 250px; /* Ukuran maksimum gambar di laptop */
-  }
-}
-
-/* Untuk gambar fluid lainnya */
-.img-fluid {
-  max-width: 100%;
-  height: auto;
-}
-
-
-/*Promise*/
-#promise{
-	padding: 4rem 0;
-	background-image: url(img/THINGS.png);
-	background-size: cover;
-}
-.promise-title h1{
-	text-transform: capitalize;
-	font-family: var(--abril);
-	font-size: 50px;
-	text-align: left;
-	padding-bottom: 2rem;
-}
-.promise-title span{
-	color: var(--purple);
-}
-.datar-promise .isi-card{
-	padding-bottom: 2rem;
-}
-#promise .card{
-	border: 3px solid var(--lightpurple);
-	padding: 1rem 0.6rem 2rem 0.6rem;
-	font-family: var(--poppins);
-	width: 35rem;
-}
-#promise .card-title{
-	font-size: 28px;
-	font-weight: bold;
-	text-transform: capitalize;
-}
-#promise .card-text{
-	font-size: 18px;
-	font-weight: 400;
-	color: var(--purple)
-}
-
-/*Testimonial*/
-#testimonial{
-	padding: 4rem 0;
-}
-#testimonial .col-lg-5{
-	background-color: var(--lightpurple);
-}
-#testimonial .one{
-	padding-top: 1.7rem;
-	padding-left: 15px;  
-}
-#testimonial .one i{
-	color: var(--purple);
-	padding-bottom: 15px;
-}
-#testimonial .one h4{
-	font-family: var(--poppins);
-	font-weight: 400;
-	font-size: 25px;
-	padding-bottom: 15px;
-}
-#testimonial .one h2{
-	font-size: 35px;
-	font-family: var(--poppins);
-	font-weight: 600;
-	color: var(--purple);
-	padding-bottom: 2rem;
-}
-/*Contact*/
-#contact{
-	padding: 6rem 0;
-	background-image: url(img/contact.png);
-	background-size: cover;
-}
-.img-contact{
-	margin-top: -1.5rem;
-}
-.contact-title h1{
-	text-transform: capitalize;
-	font-family: var(--abril);
-	font-size: 50px;
-	text-align: center;
-	padding-bottom: 2rem;
-}
-
-.contact-title span{
-	color: var(--purple);
-}
-#contact form .form-label{
-	font-family: var(--poppins);
-	font-size: 22px;
-}
-#contact form input{
-	border-radius: 0%;
-	color: var(--purple);
-}
-#contact textarea{
-	border-radius: 0%;
-	color: var(--purple);
-}
-/* Footer */
-footer{
-	background-color: var(--purple);
-	font-size: 21px;
-}
-.footer a{
-	text-decoration: none;
-	font-family: var(--poppins);
-}
-/*deskop version biasa*/
-@media (min-width: 992px) {	
-	/*navbar*/
-	.navbar{
-		padding: 0.5rem 3rem;
-		background: transparent;
-	}
-	.navbar .navbar-nav .nav-item{
-		padding: 3px 10px;
-	}
-	.navbar .navbar-nav .nav-item a{
-		background: linear-gradient(to right, var(--purple), var(--lightpurple));
-		background-size: 200%;
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		transition: 0.5s ease-out;
-	}
-	.navbar .navbar-nav .nav-item a:hover{
-		background-position: -100%;
-	}
-	/* jumbotron */
-	.jumbotron .text {
-		padding-left: 4rem;
-		top: 36%;
-		position: absolute;
-	}
-	.jumbotron .text h2{
-		text-transform: uppercase;
-		font-family: var(--lato);
-		font-size: 30px;
-		font-weight: 300;
-		padding-top: 0;
-	}
-	.jumbotron .text h1{
-		text-transform: capitalize;
-		font-family: var(--abril);
-		font-size: 85px;
-		color: black;
-	}
-	.jumbotron .text span{
-		color: var(--purple);
-	}
-	.jumbotron .text h3{
-		text-transform: capitalize;
-		font-family: var(--poppins);
-		font-size: 26px;
-		font-weight: 400;
-		display: flex;
-		padding-bottom: 25px;
-	}
-	.jumbotron .text h3::after{
-		content: '';
-		display: block;
-		border-right: 7px solid var(--lightpurple);
-		width: 4%;
-	}
-	.jumbotron .sosial-media a{
-		text-decoration: none;
-		color: var(--lightgray);
-		padding-right: 25px;
-		width: 70px;
-		height: 70px;
-	}
-	.jumbotron .sosial-media a:hover{
-		color: var(--purple);
-	}
-	/*About*/
-	.text-about{
-		padding: 10rem 0 0 4rem;
-	}
-	.text-about h1{
-		font-size: 65px;
-	}
-	.text-about span{
-		color: var(--purple);
-	}
-	.text-about p{
-		font-size: 25px;
-	}
-	#about{
-		background-image: url(img/ABOUT.png);
-		background-size: cover;
-		height: auto;
-	}
-	.about-img{
-		padding-top: 5rem;
-	}
-	/*project*/
-	/* Container Styling */
-	#project {
-  padding: 5rem 0;
-  text-align: center;
-}
-
-.title-project {
-  margin-bottom: 2rem;
-}
-
-.title-project h1 {
-  font-size: 2.5rem;
-}
-
-.project-field {
-  font-size: 1.2rem;
-  margin: 1rem 0;
-}
-
-.project-field img {
-  max-width: 100%;
-  height: auto;
-}
-
-.title-project {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin: 2rem;
-    padding: 1rem;
-    background: #f5f5f5; /* Light background for contrast */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-}
-
-/* Title Styling */
-.project-isi {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: #333;
-    margin-bottom: 0.5rem;
-}
-
-.project-isi span {
-    color: #007BFF; /* Highlight color for 'Field' */
-}
-
-/* Project Field Styling */
-.project-field {
-    font-size: 1.2rem;
-    font-weight: 500;
-    color: #555;
-    margin: 1rem 0;
-}
-
-/* Image Styling */
-.title-project img {
-    max-width: 100%;
-    height: auto;
-    margin: 0.5rem 0;
-    border-radius: 8px; /* Rounded corners for images */
-    transition: transform 0.3s ease-in-out;
-}
-
-/* Hover Effect for Images */
-.title-project img:hover {
-    transform: scale(1.05); /* Slight zoom on hover */
-}
-
-/* Span Styling */
-.title-project span {
-    display: block;
-    font-size: 1.1rem;
-    color: #333;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .title-project {
-        padding: 1rem;
-    }
-
-    .project-isi {
-        font-size: 2rem;
-    }
-
-    .project-field {
-        font-size: 1rem;
-    }
-}
-
-	
-/*skills&tools*/
-/* Skills section styling */
-#skills {
-  padding: 5rem 0;
-  text-align: center;
-}
-
-.title-skills h1 {
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
-}
-
-.gambar-skills {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.main-card img {
-  max-width: 100%;
-  height: auto;
-}
-#skills {
-    padding: 3rem 1rem;
-    background-color: #f9f9f9; /* Light background */
-    text-align: center;
-}
-
-.title-skills h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    color: #333; /* Dark text color */
-}
-
-.title-skills span {
-    color: #007bff; /* Primary color for span */
-}
-/* Row Styling */
-.row.gambar-skills {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem; /* Gap between columns */
-}
-
-/* Card Styling */
-.main-card {
-    position: relative;
-    overflow: hidden;
-    border-radius: 15px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow */
-    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease; /* Smooth transition */
-}
-
-.main-card img {
-    width: 50%;
-    height: 50%;
-    transition: transform 0.3s ease; /* Smooth zoom effect */
-}
-
-/* Hover Effects for Cards */
-.main-card:hover {
-    transform: scale(1.05); /* Zoom in effect */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
-    filter: brightness(1.1); /* Slightly brighten the image */
-}
-
-/* Additional Hover Effects for Images */
-.main-card:hover img {
-    transform: scale(1.1); /* Slightly zoom in on the image */
-}
-
-/* Ensure responsiveness */
-@media (max-width: 768px) {
-    .title-skills h1 {
-        font-size: 2rem;
-    }
-
-    .row.gambar-skills {
-        gap: 0.5rem; /* Reduced gap on smaller screens */
-    }
-
-    .main-card {
-        border-radius: 10px; /* Smaller radius */
-    }
-}
-
-/*promise*/
-#promise{
-	background-image: url(img/THINGS.png);
-	background-size: cover;
-}
-.promise-title h1{
-	font-size: 65px;
-	text-align: center;
-}
-#promise .datar-promise{
-	margin: 0 4.5rem;
-}
-/*testimonial*/
-#testimonial .one{
-	padding-top: 6rem;
-	padding-left: 3rem;
-	border-top-left-radius: 10px;
-	border-bottom-left-radius: 10px;  
-}
-#testimonial .two{
-	border-top-right-radius: 10px;
-	border-bottom-right-radius: 10px;  
-}
-.contact-title  h1{
-	font-size: 65px;
-}
-
-/* QR Section Styling */
-.qr {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: #f0f0f0; /* Light background for contrast */
-    padding: 2rem;
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    text-align: center;
-    margin: 2rem auto; /* Centered with automatic horizontal margins */
-}
-
-/* QR Image Styling */
-.qr-img img {
-    max-width: 200px; /* Limit the maximum width */
-    width: 100%; /* Responsive width */
-    height: auto;
-    border-radius: 8px; /* Rounded corners */
-    transition: transform 0.3s ease-in-out; /* Smooth zoom effect */
-}
-
-/* Hover Effect for QR Image */
-.qr-img img:hover {
-    transform: scale(1.05); /* Slight zoom on hover */
-}
-
-/* QR Name Styling */
-.qr-name p {
     font-size: 1.5rem;
-    font-weight: 700;
-    color: #333; /* Dark text color */
-    margin: 1rem 0;
-}
-
-/* GitHub Icon Styling */
-.qr-name a {
-    color: #333; /* Icon color */
-    text-decoration: none; /* Remove underline */
-    transition: color 0.3s ease-in-out; /* Smooth color transition */
-}
-
-.qr-name a:hover {
-    color: #000; /* Darker color on hover */
-}
-
-.qr-name i {
     margin-top: 0.5rem;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .qr {
-        padding: 1rem;
-    }
-
-    .qr-name p {
-        font-size: 1.2rem;
-    }
-
-    .qr-img img {
-        max-width: 150px;
-    }
-}
-/* Animasi Fade-In */
-.fade-in {
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
+.game-item p {
+    font-size: 1rem;
+    color: #6c757d;
 }
 
-.fade-in.visible {
-    opacity: 1;
+/* Skills & Tools Section */
+#skills {
+    padding: 5rem 2rem;
 }
 
-/* Animasi Slide-In dari Atas */
-.slide-in {
-    opacity: 0;
-    transform: translateY(-20px);
-    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+.title-skills h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 2rem;
 }
 
-.slide-in.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/* Navbar tetap berada di tempat */
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000; /* Pastikan berada di atas konten lainnya */
-    background: white; /* Atur sesuai kebutuhan */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Tambahkan bayangan jika diperlukan */
-}
-
-body {
-    margin-top: 60px; /* Tambahkan margin agar konten tidak tertutup navbar */
-}
-}
+.gambar-skills .main
