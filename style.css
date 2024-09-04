@@ -468,63 +468,99 @@ footer {
   height: auto;
 }
 
+/* Styling untuk container-fluid */
+.container-fluid {
+    padding: 0 15px;
+}
 
-
-/* Styling untuk section project */
-/* Styling untuk section project */
+/* Styling untuk section */
 #project {
-  padding: 5rem 0;
-  text-align: center;
+    padding: 40px 0;
+    background-color: #f8f9fa;
 }
 
 .title-project {
-  margin-bottom: 2rem;
+    text-align: center;
+    margin-bottom: 40px;
 }
 
 .project-isi {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.project-isi span {
+    color: #007bff;
 }
 
 .project-field {
-  display: block;
-  font-size: 1.5rem;
-  margin: 1rem 0;
+    font-size: 2em;
+    color: #495057;
+    margin-bottom: 20px;
 }
 
-.project-field img {
-  max-width: 50vw; /* Mengatur lebar gambar maksimum menjadi 50% dari lebar viewport */
-  height: auto;
-  border-radius: 10px; /* Optional: border-radius untuk sudut melengkung */
+.fluid-detail, .fluid-detai {
+    font-size: 1.2em;
+    color: #343a40;
+    margin: 20px 0;
 }
 
-/* Responsive adjustments */
-@media (min-width: 768px) {
-  .title-project .project-isi {
-    font-size: 2.5rem;
-  }
-
-  .project-field {
-    font-size: 1.75rem;
-  }
-
-  .project-field img {
-    max-width: 40vw; /* Lebar maksimum gambar pada tablet menjadi 40% dari lebar viewport */
-  }
+.fluid-detail p, .fluid-detai p {
+    margin-bottom: 10px;
 }
 
-@media (min-width: 992px) {
-  .title-project .project-isi {
-    font-size: 3rem;
-  }
+li {
+    list-style: disc;
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
 
-  .project-field {
-    font-size: 2rem;
-  }
+/* Styling gambar */
+.fluid-img, .game-item {
+    margin: 20px 0;
+    text-align: center;
+}
 
-  .project-field img {
-    max-width: 30vw; /* Lebar maksimum gambar pada laptop menjadi 30% dari lebar viewport */
-  }
+.fluid-img img, .game-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.fluid-img img:hover, .game-item img:hover {
+    transform: scale(1.05);
+}
+
+/* Styling game-item */
+.game-item {
+    margin-bottom: 40px;
+}
+
+.game-item h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.game-item p {
+    color: #6c757d;
+    font-size: 1em;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .project-isi, .project-field {
+        font-size: 1.8em;
+    }
+
+    .fluid-detail, .fluid-detai {
+        font-size: 1em;
+    }
+
+    .game-item h2 {
+        font-size: 1.2em;
+    }
 }
 
 
