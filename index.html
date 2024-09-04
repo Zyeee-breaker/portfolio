@@ -500,7 +500,7 @@ s
       });
        <script>
 document.addEventListener("DOMContentLoaded", function() {
-  const elements = document.querySelectorAll('.fade-in');
+  const elements = document.querySelectorAll('.title-project, .web-dev-container, .prog-container, .game-table');
 
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -511,11 +511,10 @@ document.addEventListener("DOMContentLoaded", function() {
   }, { threshold: 0.1 });
 
   elements.forEach(element => {
+    element.classList.add('fade-in');
     observer.observe(element);
   });
 });
-
-
     </script>
   </body>
 </html>
