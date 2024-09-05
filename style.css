@@ -53,7 +53,7 @@ body {
 .container-fluid.text {
   position: relative;
   z-index: 2;
-  color: #fff; /* Ensures text is readable on top of the background image */
+  color: black; /* Ensures text is readable on top of the background image */
 }
 
 /* Styling for the title and subtitle */
