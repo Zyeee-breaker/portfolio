@@ -75,7 +75,7 @@ body {
   display: inline-block;
   font-weight: bold;
   font-size: 3rem;
-  color: blueviolet; /* Violet color for the typing text effect */
+  color: Blue Violet; /* Violet color for the typing text effect */
   border-right: 2px solid violet; /* Violet color for the cursor */
   white-space: nowrap;
   overflow: hidden;
