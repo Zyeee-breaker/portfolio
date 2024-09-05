@@ -39,38 +39,35 @@ body {
 }
 
 /* Basic styling for the jumbotron section */
+/* Styling for the jumbotron section with a background image */
 .jumbotron {
-  background: url('img/scr.png') no-repeat center center;
-  background-size: cover; 
-  padding: 4rem 2rem;
+  background: url('path/to/your/image.jpg') no-repeat center center;
+  background-size: cover; /* Ensures the image covers the entire section */
   width: 100%; /* Full width of the viewport */
-  height: 500px;
+  height: 500px; /* Fixed height of 500px */
+  padding: 4rem 2rem;
   text-align: center;
   position: relative;
   overflow: hidden;
 }
 
+/* Styling for the container within the jumbotron */
 .container-fluid.text {
   position: relative;
   z-index: 2;
-  color: black; /* Ensures text is readable on top of the background image */
 }
 
 /* Styling for the title and subtitle */
-.display-4 {
-  font-size: 2.5rem;
-  color: black; /* White color for text */
+.display-4, .h1, .lead {
+  color: #000; /* Black color for all text */
 }
 
 .h1 {
-  font-size: 3rem;
   margin: 0;
-  color: black; /* White color for text */
 }
 
 .span {
   font-weight: bold;
-  color: #8A2BE2; /* Optional: contrasting color */
 }
 
 /* Animation for typed text effect */
@@ -78,8 +75,8 @@ body {
   display: inline-block;
   font-weight: bold;
   font-size: 3rem;
-  color: #8A2BE2; /* White color for text */
-  border-right: 2px solid #fff; /* White color for cursor */
+  color: violet; /* Violet color for the typing text effect */
+  border-right: 2px solid violet; /* Violet color for the cursor */
   white-space: nowrap;
   overflow: hidden;
   animation: typing 4s steps(40, end), blink 0.75s step-end infinite;
@@ -99,14 +96,14 @@ body {
     border-color: transparent;
   }
   50% {
-    border-color: #fff; /* White color for cursor */
+    border-color: violet; /* Violet color for cursor */
   }
 }
 
 /* Styling for the cursor effect */
 .cursor {
   display: inline-block;
-  background: #fff; /* White color for cursor */
+  background: violet; /* Violet color for cursor */
   width: 10px;
   height: 1.5em;
   margin-left: 2px;
@@ -119,14 +116,15 @@ body {
 }
 
 .sosial-media a {
-  color: #fff; /* White color for icons */
+  color: #000; /* Black color for icons */
   margin: 0 0.5rem;
   transition: color 0.3s;
 }
 
 .sosial-media a:hover {
-  color: #ffcc00; /* Optional: contrasting color */
+  color: violet; /* Optional: change icon color on hover */
 }
+
 /* About section styling */
 #about {
   padding: 4rem 2rem;
