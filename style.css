@@ -527,12 +527,6 @@ body {
 .btn-kirim:hover {
   background-color: #0056b3;
 }
-
-/* Footer styling */
-footer {
-  padding: 1rem;
-  background-color: #f1f1f1;
-}
 .socialme {
   background: #fff;
   border-radius: 8px;
@@ -553,14 +547,28 @@ footer {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
+  position: relative;
+}
+
+/* Background Container for Images */
+.social-img::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80px; /* Adjust width as needed */
+  height: 80px; /* Adjust height as needed */
+  background-color: #e0e0e0; /* Background color of the container */
+  border-radius: 10px; /* Rounded corners for the background */
+  transform: translate(-50%, -50%);
+  z-index: -1;
 }
 
 /* Styling for Social Media Images */
 .social-img img {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  margin-right: 15px;
+  width: 60px; /* Size of the square image */
+  height: 60px; /* Size of the square image */
+  border-radius: 8px; /* Rounded corners for the image */
   transition: transform 0.3s ease;
 }
 
@@ -573,6 +581,7 @@ footer {
   font-size: 1em;
   color: #555;
   font-weight: 500;
+  margin-left: 15px;
 }
 
 /* Styling for Links */
@@ -594,6 +603,11 @@ a:hover .social-detail {
   .social-img img {
     margin-bottom: 10px;
   }
+}
+/* Footer styling */
+footer {
+  padding: 1rem;
+  background-color: #f1f1f1;
 }
 
 .footer {
