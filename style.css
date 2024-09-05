@@ -40,7 +40,7 @@ body {
 
 /* Styling for the jumbotron section with a background image */
 .jumbotron {
-  background: url('img/src.png') no-repeat center center;
+  background: url('img/scr.png') no-repeat center center;
   background-size: cover; /* Ensures the image covers the entire section */
   width: 100%; /* Full width of the viewport */
   height: 500px; /* Fixed height of 500px */
