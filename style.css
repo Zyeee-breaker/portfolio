@@ -56,7 +56,7 @@ body {
 }
 
 .display-4, .h1, .lead {
-  color: #fff; /* Teks jumbotron putih */
+  color: black; /* Teks jumbotron putih */
 }
 
 .h1 {
