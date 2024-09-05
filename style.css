@@ -485,6 +485,24 @@ body {
   border-radius: 8px;
 }
 
+/* Social Media Section Styles */
+.social-media {
+  padding: 4rem 0;
+  background-color: #f1f1f1;
+}
+
+.social-media h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.social-img img {
+  width: 100px;
+  margin: 0.5rem;
+}
+
 /* QR section styling */
 .qr {
   padding: 4rem 2rem;
@@ -527,83 +545,7 @@ body {
 .btn-kirim:hover {
   background-color: #0056b3;
 }
-.social-media {
- padding: 20px;
-  max-width: 600px; /* Membatasi lebar maksimum section */
-  width: 100%; /* Memastikan section menggunakan 100% dari container */
-  background: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
 
-/* Gaya untuk container social media */
-.socialme {
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Menyelaraskan item ke tengah secara horizontal */
-}
-
-/* Gaya untuk nama social media (h1) */
-.social-name h1 {
-  font-size: 1.5em;
-  color: #333;
-  margin-bottom: 10px;
-  font-weight: 600;
-  text-align: center; /* Menyelaraskan teks ke tengah */
-}
-
-/* Gaya untuk setiap container social media (social-img) */
-.social-img {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-  position: relative;
-  justify-content: center; /* Menyelaraskan item ke tengah secara horizontal */
-}
-
-/* Gaya untuk gambar social media */
-.social-img img {
-  width: 60px;  /* Ukuran kotak gambar */
-  height: 60px; /* Ukuran kotak gambar */
-  border-radius: 8px; /* Sudut melengkung pada gambar */
-  transition: transform 0.3s ease;
-  background-color: #e0e0e0; /* Latar belakang gambar jika gambar tidak tersedia */
-}
-
-/* Efek hover pada gambar */
-.social-img img:hover {
-  transform: scale(1.1);
-}
-
-/* Gaya untuk detail teks social media */
-.social-detail {
-  font-size: 1em;
-  color: #555;
-  font-weight: 500;
-  margin-left: 15px;
-}
-
-/* Gaya untuk link */
-a {
-  text-decoration: none;
-}
-
-/* Efek hover pada detail teks */
-a:hover .social-detail {
-  color: #007bff;
-}
-
-/* Responsif untuk perangkat dengan lebar layar lebih kecil */
-@media (max-width: 768px) {
-  .social-img {
-    flex-direction: column;
-    align-items: center; /* Menyelaraskan item ke tengah secara horizontal */
-  }
-
-  .social-img img {
-    margin-bottom: 10px;
-  }
-}
 /* Footer styling */
 footer {
   padding: 1rem;
