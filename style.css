@@ -7,19 +7,20 @@
 body {
   font-family: 'Poppins', sans-serif;
   line-height: 1.6;
-  color: #333;
+  color: #fff; /* Ganti warna teks menjadi putih */
+  background: linear-gradient(135deg, #000000, #434343); /* Latar belakang gradien hitam */
 }
 
 /* Navbar styling */
 .navbar {
-  background-color: #fff;
+  background-color: rgba(0, 0, 0, 0.8); /* Latar belakang navbar gelap dengan transparansi */
   padding: 1rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Lebih gelap untuk kontras */
   transition: background-color 0.3s, padding 0.3s;
 }
 
 .navbar a {
-  color: #333;
+  color: #fff; /* Teks navbar putih */
   text-decoration: none;
   margin: 0 15px;
   font-weight: 500;
@@ -27,7 +28,7 @@ body {
 }
 
 .navbar a:hover {
-  color: #007bff;
+  color: #8a2be2; /* Highlight color on hover */
 }
 
 .navbar-toggler {
@@ -35,15 +36,15 @@ body {
 }
 
 .navbar-toggler-icon {
-  background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"%3E%3Cpath stroke="%23333" stroke-width="2" d="M5 7h20M5 15h20M5 23h20"/%3E%3C/svg%3E');
+  background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"%3E%3Cpath stroke="%23fff" stroke-width="2" d="M5 7h20M5 15h20M5 23h20"/%3E%3C/svg%3E');
 }
 
 /* Styling for the jumbotron section with a background image */
 .jumbotron {
   background: url('https://github.com/Zyeee-breaker/portfolio/blob/main/img/scr.png?raw=true') no-repeat center center;
-  background-size: cover; 
-  width: 100%; 
-  height: 900px; 
+  background-size: cover;
+  width: 100%;
+  height: 900px;
   padding: 4rem 2rem;
   text-align: center;
   position: relative;
@@ -58,7 +59,7 @@ body {
 
 /* Styling for the title and subtitle */
 .display-4, .h1, .lead {
-  color: #000;
+  color: #fff; /* Teks jumbotron putih */
 }
 
 .h1 {
@@ -74,8 +75,8 @@ body {
   display: inline-block;
   font-weight: bold;
   font-size: 3rem;
-  color: #8a2be2; 
-  border-right: 2px solid #8a2be2; 
+  color: #8a2be2; /* Warna teks typing effect */
+  border-right: 2px solid #8a2be2;
   white-space: nowrap;
   overflow: hidden;
   animation: typing 4s steps(40, end), blink 0.75s step-end infinite;
@@ -95,7 +96,7 @@ body {
     border-color: transparent;
   }
   50% {
-    border-color: #8a2be2; 
+    border-color: #8a2be2;
   }
 }
 
@@ -115,25 +116,26 @@ body {
 }
 
 .sosial-media a {
-  color: #000; /* Black color for icons */
+  color: #fff; /* Warna ikon sosial media putih */
   margin: 0 0.5rem;
   transition: color 0.3s;
 }
 
 .sosial-media a:hover {
-  color: #8a2be2; /* Optional: change icon color to blue-violet on hover */
+  color: #8a2be2; /* Highlight color on hover */
 }
 
 /* About section styling */
 #about {
   padding: 4rem 2rem;
-  background-color: #f9f9f9;
+  background-color: #333; /* Latar belakang section about gelap */
 }
 
 #about h1 {
   font-size: 2rem;
   margin-bottom: 1.5rem;
   text-align: center;
+  color: #fff; /* Teks heading putih */
 }
 
 #about .about-content {
@@ -145,13 +147,13 @@ body {
 
 #about .about-label {
   font-size: 0.875rem;
-  color: #007bff;
+  color: #8a2be2; /* Warna label putih */
   font-weight: 600;
 }
 
 #about .about-text {
   font-size: 1rem;
-  color: #666;
+  color: #ddd; /* Warna teks deskripsi putih */
   text-align: center;
   max-width: 800px;
 }
@@ -186,17 +188,9 @@ body {
 }
 
 /* Project Section Styling */
-
-.container-fluid {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
-}
-
-/* Project Section Styling */
 #project {
   padding: 4rem 1rem;
-  background-color: #f9f9f9;
+  background-color: #333; /* Latar belakang section project gelap */
 }
 
 /* Title Styling */
@@ -208,16 +202,18 @@ body {
 .project-isi {
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
+  color: #fff; /* Teks project putih */
 }
 
 .project-isi span {
-  color: #007bff;
+  color: #8a2be2; /* Highlight color */
 }
 
 .project-field {
   font-size: 2rem;
   margin: 2rem 0 1.5rem;
   text-align: center;
+  color: #ddd; /* Warna teks deskripsi putih */
 }
 
 /* Web Development Container */
@@ -233,7 +229,8 @@ body {
   flex: 1 1 50%;
   padding: 1.5rem;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: #444; /* Latar belakang detail web-dev gelap */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .web-dev-image {
@@ -262,7 +259,8 @@ body {
   flex: 1 1 50%;
   padding: 1.5rem;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: #444; /* Latar belakang detail prog gelap */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .prog-image {
@@ -289,45 +287,10 @@ body {
 .game-item {
   flex: 1 1 18%;
   text-align: center;
-  background: #fff;
+  background: #444; /* Latar belakang item game gelap */
   padding: 1rem;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.game-item img {
-  max-width: 100%;
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 8px;
-  margin-bottom: 0.5rem;
-}
-.game-item img:hover {
-  trasform:scale(1.1);
-}
-
-.game-item h2 {
-  font-size: 1.25rem;
-  margin-bottom: 0.5rem;
-}
-
-.game-item p {
-  font-size: 0.875rem;
-  color: #666;
-}
-.game-table {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  justify-content: center;
-}
-
-.game-item {
-  flex: 1 1 18%;
-  text-align: center;
-  background: #fff;
-  padding: 1rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -341,49 +304,18 @@ body {
 /* Hover Effect */
 .game-item:hover {
   transform: scale(1.05); /* Slightly enlarge the item */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhance shadow effect */
 }
 
 .game-item:hover img {
   transform: scale(1.1); /* Slightly enlarge the image */
 }
-/* Animation for Scroll */
-.fade-in {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-
-.fade-in.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .web-dev-container,
-  .prog-container {
-    flex-direction: column;
-  }
-
-  .web-dev-detail,
-  .prog-detail {
-    flex: 1 1 100%;
-  }
-
-  .web-dev-image,
-  .prog-image {
-    flex: 1 1 100%;
-  }
-}
-
-/* Project Section Styling */
 
 /* Skills & Tools section styling */
 /* Container Styling */
 #skills {
   padding: 3rem 0;
-  background-color: #f9f9f9;
+  background-color: #333; /* Latar belakang section skills gelap */
 }
 
 .title-skills {
@@ -393,11 +325,11 @@ body {
 
 .title-skills h1 {
   font-size: 2.5rem;
-  color: #333;
+  color: #fff; /* Teks heading putih */
 }
 
 .title-skills span {
-  color: #007bff; /* Adjust color as needed */
+  color: #8a2be2; /* Highlight color */
 }
 
 .row.gambar-skills {
@@ -412,6 +344,7 @@ body {
   overflow: hidden; /* Ensures content doesn't overflow the border-radius */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border-radius: 8px; /* Rounded corners */
+  background: #444; /* Latar belakang card gelap */
 }
 
 .main-card img {
@@ -425,7 +358,7 @@ body {
 /* Hover Effect */
 .main-card:hover {
   transform: scale(1.1); /* Slightly enlarge the card */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhance shadow effect */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhance shadow effect */
 }
 
 .main-card:hover img {
@@ -440,21 +373,25 @@ body {
 .promise-title h1 {
   font-size: 2.5rem;
   margin-bottom: 2rem;
+  color: #fff; /* Teks heading putih */
 }
 
 .card {
   border: none;
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background: #444; /* Latar belakang card gelap */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .card-body {
   padding: 2rem;
+  color: #fff; /* Teks body card putih */
 }
 
 .card-title {
   font-size: 1.5rem;
   margin-bottom: 1rem;
+  color: #fff; /* Teks card title putih */
 }
 
 /* Testimonial section styling */
@@ -473,11 +410,12 @@ body {
 .one h4 {
   font-size: 1.25rem;
   margin: 1rem 0;
+  color: #8a2be2; /* Highlight color */
 }
 
 .one h2 {
   font-size: 1.5rem;
-  color: #007bff;
+  color: #fff; /* Teks heading putih */
 }
 
 .img-testi img {
@@ -485,6 +423,7 @@ body {
   border-radius: 8px;
 }
 
+/* QR Section Styling */
 .qr {
   padding: 4rem 2rem;
   text-align: center;
@@ -499,18 +438,20 @@ body {
 }
 
 .qr-name a {
-  color: #007bff;
+  color: #8a2be2; /* Highlight color */
   font-size: 1.5rem;
 }
 
 /* Contact section styling */
 #contact {
   padding: 4rem 2rem;
+  background-color: #333; /* Latar belakang section contact gelap */
 }
 
 .contact-title h1 {
   font-size: 2.5rem;
   margin-bottom: 2rem;
+  color: #fff; /* Teks heading putih */
 }
 
 .img-contact img {
@@ -530,15 +471,15 @@ body {
 /* Footer styling */
 footer {
   padding: 1rem;
-  background-color: #f1f1f1;
+  background-color: #222; /* Latar belakang footer gelap */
 }
 
 .footer {
-  color: #333;
+  color: #fff; /* Teks footer putih */
 }
 
 .footer a {
-  color: #007bff;
+  color: #8a2be2; /* Highlight color */
   text-decoration: none;
 }
 
