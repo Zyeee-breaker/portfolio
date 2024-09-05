@@ -43,10 +43,10 @@ body {
   background: url('img/SKILLS.png') no-repeat center center;
   background-size: cover; 
   padding: 4rem 2rem;
+  heigth: 500px;
   text-align: center;
   position: relative;
   overflow: hidden;
-  heigth: 200px;
 }
 
 /* Styling for the container within the jumbotron */
