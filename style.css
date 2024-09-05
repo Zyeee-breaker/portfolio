@@ -59,7 +59,7 @@ body {
 /* Styling for the title and subtitle */
 .display-4 {
   font-size: 2.5rem;
-  color: #fff; /* White color for text */
+  color: black; /* White color for text */
 }
 
 .h1 {
