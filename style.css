@@ -20,7 +20,7 @@ body {
 }
 
 .navbar a {
-  color: #fff; /* Teks navbar putih */
+  color: white; /* Teks navbar putih */
   text-decoration: none;
   margin: 0 15px;
   font-weight: 500;
@@ -59,7 +59,7 @@ body {
 
 /* Styling for the title and subtitle */
 .display-4, .h1, .lead {
-  color: #fff; /* Teks jumbotron putih */
+  color: black; /* Teks jumbotron putih */
 }
 
 .h1 {
@@ -116,7 +116,7 @@ body {
 }
 
 .sosial-media a {
-  color: #fff; /* Warna ikon sosial media putih */
+  color: black; /* Warna ikon sosial media putih */
   margin: 0 0.5rem;
   transition: color 0.3s;
 }
