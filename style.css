@@ -46,6 +46,7 @@ body {
   text-align: center;
   position: relative;
   overflow: hidden;
+  heigth: 200px;
 }
 
 /* Styling for the container within the jumbotron */
