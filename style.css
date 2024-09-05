@@ -489,10 +489,7 @@ body {
 .social-media {
   padding: 4rem 0;
   background-color: #f1f1f1;
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
-  text-align: center;
-  position: relative;
+  width: 100%;
 }
 
 .social-media h1 {
@@ -502,12 +499,16 @@ body {
   margin-bottom: 1rem;
 }
 
+.social-img {
+  display: flex;
+  justify-content: center;
+}
+
 .social-img img {
   width: 100px;
   margin: 0.5rem;
 }
 
-/* QR section styling */
 .qr {
   padding: 4rem 2rem;
   text-align: center;
