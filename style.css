@@ -38,13 +38,12 @@ body {
   background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"%3E%3Cpath stroke="%23333" stroke-width="2" d="M5 7h20M5 15h20M5 23h20"/%3E%3C/svg%3E');
 }
 
-/* Basic styling for the jumbotron section */
 /* Styling for the jumbotron section with a background image */
 .jumbotron {
-  background: url('img/scr.png') no-repeat center center;
+  background: url('img/src.png') no-repeat center center;
   background-size: cover; /* Ensures the image covers the entire section */
   width: 100%; /* Full width of the viewport */
-  height: 900px; /* Fixed height of 500px */
+  height: 500px; /* Fixed height of 500px */
   padding: 4rem 2rem;
   text-align: center;
   position: relative;
@@ -75,8 +74,8 @@ body {
   display: inline-block;
   font-weight: bold;
   font-size: 3rem;
-  color: Blue Violet; /* Violet color for the typing text effect */
-  border-right: 2px solid violet; /* Violet color for the cursor */
+  color: #8a2be2; /* Blue-violet color for the typing text effect */
+  border-right: 2px solid #8a2be2; /* Blue-violet color for the cursor */
   white-space: nowrap;
   overflow: hidden;
   animation: typing 4s steps(40, end), blink 0.75s step-end infinite;
@@ -96,14 +95,14 @@ body {
     border-color: transparent;
   }
   50% {
-    border-color: violet; /* Violet color for cursor */
+    border-color: #8a2be2; /* Blue-violet color for cursor */
   }
 }
 
 /* Styling for the cursor effect */
 .cursor {
   display: inline-block;
-  background: black; /* Violet color for cursor */
+  background: #8a2be2; /* Blue-violet color for cursor */
   width: 10px;
   height: 1.5em;
   margin-left: 2px;
@@ -122,7 +121,7 @@ body {
 }
 
 .sosial-media a:hover {
-  color: violet; /* Optional: change icon color on hover */
+  color: #8a2be2; /* Optional: change icon color to blue-violet on hover */
 }
 
 /* About section styling */
