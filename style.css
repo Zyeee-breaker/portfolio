@@ -50,26 +50,27 @@ body {
   overflow: hidden;
 }
 
-/* Styling for the container within the jumbotron */
 .container-fluid.text {
   position: relative;
   z-index: 2;
+  color: #fff; /* Ensures text is readable on top of the background image */
 }
 
 /* Styling for the title and subtitle */
 .display-4 {
   font-size: 2.5rem;
-  color: #333;
+  color: #fff; /* White color for text */
 }
 
 .h1 {
   font-size: 3rem;
   margin: 0;
+  color: #fff; /* White color for text */
 }
 
 .span {
   font-weight: bold;
-  color: #007bff;
+  color: #ffcc00; /* Optional: contrasting color */
 }
 
 /* Animation for typed text effect */
@@ -77,8 +78,8 @@ body {
   display: inline-block;
   font-weight: bold;
   font-size: 3rem;
-  color: #007bff;
-  border-right: 2px solid #007bff;
+  color: #fff; /* White color for text */
+  border-right: 2px solid #fff; /* White color for cursor */
   white-space: nowrap;
   overflow: hidden;
   animation: typing 4s steps(40, end), blink 0.75s step-end infinite;
@@ -98,14 +99,14 @@ body {
     border-color: transparent;
   }
   50% {
-    border-color: #007bff;
+    border-color: #fff; /* White color for cursor */
   }
 }
 
 /* Styling for the cursor effect */
 .cursor {
   display: inline-block;
-  background: #007bff;
+  background: #fff; /* White color for cursor */
   width: 10px;
   height: 1.5em;
   margin-left: 2px;
@@ -118,16 +119,14 @@ body {
 }
 
 .sosial-media a {
-  color: #333;
+  color: #fff; /* White color for icons */
   margin: 0 0.5rem;
   transition: color 0.3s;
 }
 
 .sosial-media a:hover {
-  color: #007bff;
+  color: #ffcc00; /* Optional: contrasting color */
 }
-
-
 /* About section styling */
 #about {
   padding: 4rem 2rem;
