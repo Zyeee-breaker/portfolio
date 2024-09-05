@@ -485,30 +485,6 @@ body {
   border-radius: 8px;
 }
 
-/* Social Media Section Styles */
-.social-media {
-  padding: 4rem 0;
-  background-color: #f1f1f1;
-  width: 100%;
-}
-
-.social-media h1 {
-  font-size: 2rem;
-  font-weight: 700;
-  text-align: center;
-  margin-bottom: 1rem;
-}
-
-.social-img {
-  display: flex;
-  justify-content: center;
-}
-
-.social-img img {
-  width: 100px;
-  margin: 0.5rem;
-}
-
 .qr {
   padding: 4rem 2rem;
   text-align: center;
