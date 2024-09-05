@@ -39,36 +39,94 @@ body {
 }
 
 /* Jumbotron styling */
-.jumbotron {
-  background: url('img/SKILLS.png') no-repeat center center/cover;
-  color: #fff;
+/* Container Styling */
+#home {
+  background-color: #f8f9fa; /* Light background color */
+  padding: 5rem 0;
   text-align: center;
-  padding: 4rem 2rem;
 }
 
-.jumbotron h1, .jumbotron h2 {
-  margin-bottom: 1rem;
+.jumbotron {
+  background: none; /* Remove default background */
+  padding: 0;
+  margin: 0;
 }
 
-.jumbotron h1 {
-  font-size: 3rem;
-  font-weight: 700;
+.text {
+  padding: 0 2rem;
 }
 
-.jumbotron h2 {
-  font-size: 2rem;
-  font-weight: 400;
+.display-4 {
+  font-size: 2.5rem; /* Adjust as needed */
+  color: #333; /* Dark color for visibility */
+}
+
+.h1 {
+  font-size: 3.5rem; /* Adjust size as needed */
+  color: #007bff; /* Primary color or your preferred color */
+  margin: 0;
+  font-weight: bold;
+}
+
+.span.Zyeee {
+  display: inline-block;
+  font-size: 3.5rem; /* Adjust size as needed */
+  color: #333;
+}
+
+.cursor {
+  display: inline-block;
+  width: 0.1em;
+  height: 1em;
+  background: #333;
+  animation: blink 0.7s infinite;
+}
+
+/* Typing Animation */
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.lead {
+  font-size: 1.5rem;
+  color: #666; /* Slightly lighter color for the subtitle */
+}
+
+.sosial-media {
+  margin-top: 2rem;
 }
 
 .sosial-media a {
-  color: #fff;
-  margin: 0 10px;
-  transition: color 0.3s;
+  color: #333; /* Icon color */
+  margin: 0 0.5rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 .sosial-media a:hover {
-  color: #007bff;
+  color: #007bff; /* Color on hover */
 }
+
+/* Mobile responsiveness */
+@media (max-width: 767px) {
+  .display-4 {
+    font-size: 2rem;
+  }
+
+  .h1 {
+    font-size: 2.5rem;
+  }
+
+  .lead {
+    font-size: 1.25rem;
+  }
+}
+
 
 /* About section styling */
 #about {
