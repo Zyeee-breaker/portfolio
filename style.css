@@ -47,7 +47,7 @@ body {
 }
 
 .jumbotron {
-  background: none; /* Remove default background */
+  background-img: url("img/SKILLS.png") cover; /* Remove default background */
   padding: 0;
   margin: 0;
 }
