@@ -489,8 +489,9 @@ body {
 .social-media {
   padding: 4rem 0;
   background-color: #f1f1f1;
-  justfy-content: center;
-  align-item: center;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
 }
 
 .social-media h1 {
