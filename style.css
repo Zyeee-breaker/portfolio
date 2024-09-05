@@ -43,8 +43,8 @@ body {
   background: url('img/SKILLS.png') no-repeat center center;
   background-size: cover; 
   padding: 4rem 2rem;
-  width: auto;
-  heigth: 500px;
+  width: 100%; /* Full width of the viewport */
+  height: 500px;
   text-align: center;
   position: relative;
   overflow: hidden;
