@@ -11,7 +11,6 @@ body {
   background: linear-gradient(135deg, #000000, #434343); /* Latar belakang gradien hitam */
 }
 
-/* Navbar styling */
 .navbar {
   background-color: rgba(0, 0, 0, 0.8); /* Latar belakang navbar gelap dengan transparansi */
   padding: 1rem;
@@ -20,7 +19,7 @@ body {
 }
 
 .navbar a {
-  color: white; /* Teks navbar putih */
+  color: #fff; /* Teks navbar berwarna putih */
   text-decoration: none;
   margin: 0 15px;
   font-weight: 500;
@@ -39,7 +38,7 @@ body {
   background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"%3E%3Cpath stroke="%23fff" stroke-width="2" d="M5 7h20M5 15h20M5 23h20"/%3E%3C/svg%3E');
 }
 
-/* Styling for the jumbotron section with a background image */
+/* Jumbotron Styling */
 .jumbotron {
   background: url('https://github.com/Zyeee-breaker/portfolio/blob/main/img/scr.png?raw=true') no-repeat center center;
   background-size: cover;
@@ -51,15 +50,13 @@ body {
   overflow: hidden;
 }
 
-/* Styling for the container within the jumbotron */
 .container-fluid.text {
   position: relative;
   z-index: 2;
 }
 
-/* Styling for the title and subtitle */
 .display-4, .h1, .lead {
-  color: black; /* Teks jumbotron putih */
+  color: #fff; /* Teks jumbotron putih */
 }
 
 .h1 {
@@ -70,7 +67,6 @@ body {
   font-weight: bold;
 }
 
-/* Animation for typed text effect */
 .typed-text {
   display: inline-block;
   font-weight: bold;
@@ -100,7 +96,6 @@ body {
   }
 }
 
-/* Styling for the cursor effect */
 .cursor {
   display: inline-block;
   background: #8a2be2;
@@ -110,19 +105,24 @@ body {
   animation: blink 0.75s step-end infinite;
 }
 
-/* Styling for the social media icons */
 .sosial-media {
   margin-top: 1rem;
 }
 
 .sosial-media a {
-  color: black; /* Warna ikon sosial media putih */
+  color: #fff; /* Warna ikon sosial media putih */
   margin: 0 0.5rem;
   transition: color 0.3s;
 }
 
 .sosial-media a:hover {
   color: #8a2be2; /* Highlight color on hover */
+}
+
+/* Section About Styling */
+#about {
+  padding: 4rem 2rem;
+  background-color: #333; /* Latar belakang section about gelap */
 }
 
 /* About section styling */
