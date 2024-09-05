@@ -527,6 +527,11 @@ body {
 .btn-kirim:hover {
   background-color: #0056b3;
 }
+.social-media {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 .socialme {
   background: #fff;
   border-radius: 8px;
