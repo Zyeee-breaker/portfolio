@@ -44,7 +44,7 @@ body {
   background: url('img/scr.png') no-repeat center center;
   background-size: cover; /* Ensures the image covers the entire section */
   width: 100%; /* Full width of the viewport */
-  height: 500px; /* Fixed height of 500px */
+  height: 900px; /* Fixed height of 500px */
   padding: 4rem 2rem;
   text-align: center;
   position: relative;
@@ -103,7 +103,7 @@ body {
 /* Styling for the cursor effect */
 .cursor {
   display: inline-block;
-  background: violet; /* Violet color for cursor */
+  background: black; /* Violet color for cursor */
   width: 10px;
   height: 1.5em;
   margin-left: 2px;
