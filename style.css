@@ -41,7 +41,7 @@ body {
 /* Basic styling for the jumbotron section */
 /* Styling for the jumbotron section with a background image */
 .jumbotron {
-  background: url('path/to/your/image.jpg') no-repeat center center;
+  background: url('img/ilustrasi.png') no-repeat center center;
   background-size: cover; /* Ensures the image covers the entire section */
   width: 100%; /* Full width of the viewport */
   height: 500px; /* Fixed height of 500px */
