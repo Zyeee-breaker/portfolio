@@ -40,7 +40,7 @@ body {
 
 /* Styling for the jumbotron section with a background image */
 .jumbotron {
-  background: url('img/scr.png') no-repeat center center;
+  background: url('https://github.com/Zyeee-breaker/portfolio/blob/main/img/scr.png?raw=true') no-repeat center center;
   background-size: cover; 
   width: 100%; 
   height: 900px; 
