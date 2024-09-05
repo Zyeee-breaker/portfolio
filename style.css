@@ -12,7 +12,7 @@ body {
 }
 
 .navbar {
-  background-color: rgba(0, 0, 0, 0.8); /* Latar belakang navbar gelap dengan transparansi */
+  background-color: transparant; /* Latar belakang navbar gelap dengan transparansi */
   padding: 1rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Lebih gelap untuk kontras */
   transition: background-color 0.3s, padding 0.3s;
