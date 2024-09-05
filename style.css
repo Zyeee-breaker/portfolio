@@ -40,7 +40,7 @@ body {
 
 /* Basic styling for the jumbotron section */
 .jumbotron {
-  background-img: url(img/SKILLS.png) center cover;
+  background: url('path/to/your/image.jpg') no-repeat center center;
   padding: 4rem 2rem;
   text-align: center;
   position: relative;
