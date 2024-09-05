@@ -528,62 +528,54 @@ body {
   background-color: #0056b3;
 }
 .social-media {
-  padding: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-  justfy-content: center;
-  align-content: center;
-}
-.socialme {
+ padding: 20px;
+  max-width: 600px; /* Membatasi lebar maksimum section */
+  width: 100%; /* Memastikan section menggunakan 100% dari container */
   background: #fff;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px;
 }
 
-/* Styling for Social Media Names */
+/* Gaya untuk container social media */
+.socialme {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Menyelaraskan item ke tengah secara horizontal */
+}
+
+/* Gaya untuk nama social media (h1) */
 .social-name h1 {
   font-size: 1.5em;
   color: #333;
   margin-bottom: 10px;
   font-weight: 600;
+  text-align: center; /* Menyelaraskan teks ke tengah */
 }
 
-/* Container for Each Social Media Item */
+/* Gaya untuk setiap container social media (social-img) */
 .social-img {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
   position: relative;
+  justify-content: center; /* Menyelaraskan item ke tengah secara horizontal */
 }
 
-/* Background Container for Images */
-.social-img::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 80px; /* Adjust width as needed */
-  height: 80px; /* Adjust height as needed */
-  background-color: #e0e0e0; /* Background color of the container */
-  border-radius: 10px; /* Rounded corners for the background */
-  transform: translate(-50%, -50%);
-  z-index: -1;
-}
-
-/* Styling for Social Media Images */
+/* Gaya untuk gambar social media */
 .social-img img {
-  width: 60px; /* Size of the square image */
-  height: 60px; /* Size of the square image */
-  border-radius: 8px; /* Rounded corners for the image */
+  width: 60px;  /* Ukuran kotak gambar */
+  height: 60px; /* Ukuran kotak gambar */
+  border-radius: 8px; /* Sudut melengkung pada gambar */
   transition: transform 0.3s ease;
+  background-color: #e0e0e0; /* Latar belakang gambar jika gambar tidak tersedia */
 }
 
+/* Efek hover pada gambar */
 .social-img img:hover {
   transform: scale(1.1);
 }
 
-/* Styling for Details Text */
+/* Gaya untuk detail teks social media */
 .social-detail {
   font-size: 1em;
   color: #555;
@@ -591,20 +583,21 @@ body {
   margin-left: 15px;
 }
 
-/* Styling for Links */
+/* Gaya untuk link */
 a {
   text-decoration: none;
 }
 
+/* Efek hover pada detail teks */
 a:hover .social-detail {
   color: #007bff;
 }
 
-/* Responsive Design */
+/* Responsif untuk perangkat dengan lebar layar lebih kecil */
 @media (max-width: 768px) {
   .social-img {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center; /* Menyelaraskan item ke tengah secara horizontal */
   }
 
   .social-img img {
