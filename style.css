@@ -19,7 +19,7 @@ body {
 }
 
 .navbar a {
-  color: #F0F8FF; /* Teks navbar berwarna putih */
+  color: white; /* Teks navbar berwarna putih */
   text-decoration: none;
   margin: 0 15px;
   font-weight: 500;
